@@ -8,7 +8,7 @@ function Header() {
         <ul class="header__list">
           <li class="header__list-item">
             <Link to="/aboutme" class="header__link">
-              <button className="header__button">Sobre mi</button>
+              <button className="header__button">Sobre&nbsp;mi</button>
             </Link>
           </li>
 
