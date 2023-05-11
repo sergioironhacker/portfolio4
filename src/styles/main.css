@@ -16,7 +16,6 @@
   transition: all 0.5s ease;
   background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .01)), linear-gradient(rgba(0, 0, 0, .01), rgba(0, 0, 0, .8));
   background-size: 100% 10%;
-  /* background-position:  bottom, top; */
   background-position: top, bottom;
   background-repeat: no-repeat;
 }
@@ -63,7 +62,6 @@
   .main__title {
     font-size: 2rem;
   }
-
 }
 
 @media only screen and (min-width: 481px) and (max-width: 1024px) {
@@ -96,6 +94,26 @@
     font-size: 2.4rem;
   }
 }
+
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+  .main {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .main__container {
+    height: 10rem;
+    border-radius: 0;
+    background-color: transparent;
+  }
+
+  .main__title {
+    font-size: 1.8rem;
+  }
+}
+
+
+
 
 /*? METEOR*/
 /* .meteor {

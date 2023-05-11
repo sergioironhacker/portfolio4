@@ -100,3 +100,15 @@
     font-size: 1.1rem;
   }
 }
+
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+  .header__list {
+    gap: 1rem;
+  }
+
+  .header__button {
+    padding: 1rem ;
+    font-size: .8rem;
+  }
+  
+}

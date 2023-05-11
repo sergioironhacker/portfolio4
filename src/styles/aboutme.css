@@ -1,6 +1,6 @@
 .aboutme {
     background-color: rgba(23, 195, 178, 0.2);
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,9 +16,9 @@
 }
 
 .aboutme__text {
-    color: white;
+    color: #fff;
     text-align:justify;
-    padding: 0 1rem;
+    padding: 0 1rem 1rem 1rem;
 }
 
 @media only screen and (max-width: 480px) {
@@ -52,4 +52,10 @@
       font-size: 1.4rem;
       max-width: 600px;
     }
+}
+
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+  .aboutme__text {
+    padding-bottom: 1rem;
+  }
 }

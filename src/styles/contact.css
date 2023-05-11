@@ -139,4 +139,11 @@
   }
 }
 
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+  .contact {
+    height: 100%;
+    padding-bottom: 1rem;
+  }
+}
+
 
