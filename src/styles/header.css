@@ -16,7 +16,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
 }
 
 .header__list-item {
@@ -69,31 +68,35 @@
   cursor: pointer;
 }
 
-
 @media only screen and (max-width: 480px) {
-  body {
-    overflow-x: hidden;
+  .header__list {
+    gap: .7rem;
   }
 
   .header__button {
     padding: 1rem ;
     font-size: .8rem;
   }
-
 }
 
 @media only screen and (min-width: 481px) and (max-width: 1024px) {
+  .header__list {
+    gap: 1.5rem;
+  }
+  
   .header__button {
     padding: 1.3rem ;
     font-size: 1rem;
   }
-
 }
 
 @media only screen and (min-width: 1025px) {
+  .header__list {
+    gap: 2rem;
+  }
+  
   .header__button {
     padding: 1.3rem ;
     font-size: 1.1rem;
   }
- 
 }
