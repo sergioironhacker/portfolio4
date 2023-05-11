@@ -1,0 +1,95 @@
+.header {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__nav {
+  margin: 0;
+  width: 100%;
+}
+
+.header__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.header__list-item {
+  list-style: none;
+}
+
+.header__link {
+  color: white;
+  text-decoration: none;
+}
+
+.header__button {
+  border: 2px solid #17C3B2;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-top: none;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  transition: .5s;
+  z-index: 1;
+  font-family: inherit;
+  color: #17C3B2;
+  font-weight: bold;
+  letter-spacing: .5px;
+ }
+
+.header__button::before {
+  content: '';
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #17C3B2;
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+}
+
+.header__button:hover::before {
+  width: 200%;
+}
+
+.header__button:hover {
+  color: #111;
+  cursor: pointer;
+}
+
+
+@media only screen and (max-width: 480px) {
+  .header__button {
+    padding: 1rem ;
+    font-size: .8rem;
+  }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  .header__button {
+    padding: 1.3rem ;
+    font-size: 1rem;
+  }
+
+}
+
+@media only screen and (min-width: 1025px) {
+  .header__button {
+    padding: 1.3rem ;
+    font-size: 1.1rem;
+  }
+ 
+}

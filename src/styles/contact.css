@@ -1,0 +1,142 @@
+.contact {
+  background-color: rgba(23, 195, 178, 0.2);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact__title {
+    text-align: center;
+    margin: 5rem 0;
+    color: #1df2dc;  
+    font-family:Cambria, serif;
+    letter-spacing: 2px;
+    padding: .5rem;
+}
+
+/* .contact__nav {} */
+  
+.contact__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} 
+  
+.contact__list-item {
+  list-style: none;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 1rem;
+  transition-duration: .2s;
+}
+
+.contact__list-item:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, .8);
+}
+
+.contact__link {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .contact__icon {} */
+
+.linkedin {
+  color: #0077B5;
+  background-color: #fff;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: .3rem;
+}
+
+.github {
+  color: #000;
+  background-color: #fff;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 100%;
+}
+
+.email {
+  color: rgb(255, 43, 43);
+  background-color: #fff;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: .5rem;
+}
+
+.contact__text-icon {
+  color: aqua;
+} 
+
+@media only screen and (max-width: 480px) {
+  .contact__title {
+    font-size: 2rem;
+  }
+
+  .contact__list {
+    row-gap: 2rem;
+  }
+
+  .contact__icon {
+    font-size: 3rem;
+  }
+
+  .contact__list-item {
+     width: 100%;
+  } 
+
+  .contact__text-icon {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  .contact__title {
+    font-size: 2.2rem;
+  }
+
+  .contact__list {
+    row-gap: 2.2rem;
+  }
+
+  .contact__icon {
+    font-size: 3.2rem;
+  }
+
+  .contact__list-item {
+     width: 110%;
+  }
+
+  .contact__text-icon {
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .contact__title {
+    font-size: 2.4rem;
+  }
+
+  .contact__list {
+    row-gap: 2.4rem;
+  }
+
+  .contact__icon {
+    font-size: 3.4rem;
+  }
+
+  .contact__list-item {
+     width: 120%;
+  }
+
+  .contact__text-icon {
+    font-size: 1.2rem;
+  }
+}
+
+

@@ -1,0 +1,162 @@
+.main {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8rem;
+}
+
+.main__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(23, 195, 178, 0.1);
+  padding: 1rem;
+  transition: all 0.5s ease;
+  background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .01)), linear-gradient(rgba(0, 0, 0, .01), rgba(0, 0, 0, .8));
+  background-size: 100% 10%;
+  /* background-position:  bottom, top; */
+  background-position: top, bottom;
+  background-repeat: no-repeat;
+}
+
+/* .main__container.clicked {
+  background-color: rgba(23, 195, 178, 0.4);
+  padding: 1rem;
+  transform: perspective(600px)  rotateX(0deg) rotateY(-20deg);
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+  text-align: end;
+} */
+
+.main__title {
+  /* text-shadow: 0 .5rem 1rem black; */
+  font-family:Cambria, serif;
+  color: #1df2dc;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.main__span {
+  text-align: center;
+  display: block;
+  width: 20%;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 480px) {
+  .main {
+    width: 100%;
+    margin-bottom: 8rem;
+  }
+
+  .main__container {
+    height: 15rem;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .main__title {
+    font-size: 2rem;
+  }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  .main {
+    height: 17rem;
+    margin-bottom: 8.1rem; 
+  }
+
+  .main__container {
+    width: 100%;
+    padding: 3rem;
+  }
+
+  .main__title {
+    font-size: 2.2rem;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .main {
+    height: 15.2rem;
+    margin-bottom: 8.2rem;  
+  }
+
+  .main__container {
+    padding: 3.1rem;
+  }
+
+  .main__title {
+    font-size: 2.4rem;
+  }
+}
+
+/*? METEOR*/
+/* .meteor {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  animation: down 15s linear 1;
+  animation-delay: 22s;
+  top: -30px;
+  left: -30px;
+  transition-duration: .1s;
+  z-index: 3;
+}
+
+@keyframes down {
+  0% {
+    left: -30px;
+    top: -30px;
+    transform: translateY(-50%) rotate(-45deg);
+  }
+  100% {
+    left: calc(100% + 30px);
+    top: calc(100% + 30px);
+    transform: translateY(50%) rotate(45deg);
+  }
+}
+
+.meteor-hidden {
+  opacity: 0;
+}
+
+.meteor:hover {
+  box-shadow: 0 0 10px #d3d3d3;
+} */
+
+/*? SATELITE*/
+/* .satelite {
+  z-index: 3;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 20%;
+  left: 80%;
+  animation: down 15s linear 1 forwards;
+  animation-delay: 4s;
+}
+
+.satelite-hidden {
+  opacity: 0;
+}
+
+@keyframes down {
+  0% {
+    left: -30px;
+    top: -30px;
+    transform: translateY(-50%) rotate(-45deg);
+  }
+  100% {
+    left: calc(100% + 30px);
+    top: calc(100% + 30px);
+    transform: translateY(50%) rotate(45deg);
+  }
+} */
