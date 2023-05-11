@@ -1,5 +1,5 @@
 .aboutme {
-    background-color: rgba(23, 195, 178, 0.2);
+    background-color: rgba(23, 195, 178, .2);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -11,14 +11,17 @@
     width: 100%;
     margin: 4rem 0;
     color: #1df2dc;  
-    font-family:Cambria, serif;
+    font-family: 'Orbitron', sans-serif;
     letter-spacing: 2px;
+    text-transform: capitalize;
+ 
 }
 
 .aboutme__text {
     color: #fff;
     text-align:justify;
     padding: 0 1rem 1rem 1rem;
+    font-family: 'Open Sans', sans-serif;
 }
 
 @media only screen and (max-width: 480px) {

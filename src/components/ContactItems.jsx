@@ -21,7 +21,10 @@ function ContactItems({ iconClass, href, textIcon, iconItem }) {
     <li onClick={HREF} className="contact__list-item">
       <a className="contact__link">
         <p className="contact__text-icon">{textIcon}</p>
-        {iconItem({ className: HANDLE_ICON_CLASS() })}
+
+        {/* {iconItem({ className: HANDLE_ICON_CLASS() })} */}
+
+        <img src={iconItem} className={HANDLE_ICON_CLASS()} />
       </a>
     </li>
   );

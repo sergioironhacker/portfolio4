@@ -11,7 +11,11 @@ const ROUTER = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
-    errorElement: <h1>La ruta especificada, no existe</h1>,
+    errorElement: (
+      <div className="spiderman_no_way_home">
+        <h1>La ruta especificada, no existe</h1>,
+      </div>
+    ),
   },
   {
     path: "/aboutme",

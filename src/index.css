@@ -4,14 +4,30 @@
   margin: 0;
 }
 
+.spiderman_no_way_home {
+  background-color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+
 html body{
   background-color: #000;
 }
 
 .backarrow-btn {
-  color: #1df2dc;
-  margin: .3rem;
-  transition-duration: .2s;
+    position: absolute;
+    top:0;
+    left:0;
+    font-size: 2.4rem;
+    color: #1df2dc;
+    transition-duration: .2s;
+    margin: 3rem;
 }
 
 .backarrow-btn:hover {

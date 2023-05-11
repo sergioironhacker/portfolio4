@@ -3,9 +3,13 @@ import BackArrow from "../components/BackArrow";
 import Background from "../components/Background";
 import ContactItems from "../components/ContactItems";
 
-import { BsLinkedin as linkedin } from "react-icons/bs";
-import { BsGithub as github } from "react-icons/bs";
-import { MdEmail as email } from "react-icons/md";
+import linkedin from "../assets/img/linkedinSvg.svg";
+import github from "../assets/img/githubSvg.svg";
+import email from "../assets/img/emailSvg.svg";
+
+// import { BsLinkedin as linkedin } from "react-icons/bs";
+// import { BsGithub as github } from "react-icons/bs";
+// import { MdEmail as email } from "react-icons/md";
 
 function Contact() {
   return (
@@ -14,7 +18,7 @@ function Contact() {
 
       <BackArrow />
 
-      <h2 className="contact__title">Puedes contactarme por estos medios</h2>
+      <h2 className="contact__title">Medios de contácto</h2>
       <nav className="contact__nav">
         <ul className="contact__list">
           <ContactItems
@@ -23,6 +27,8 @@ function Contact() {
             iconClass="linkedin"
             href="###"
           />
+
+          {/* <img src={linkedin} /> */}
 
           <ContactItems
             textIcon="gioliotta"

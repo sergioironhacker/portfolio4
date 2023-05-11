@@ -13,48 +13,49 @@ function Projects() {
   // const TECHNOLOGIES_PROJECT_6 = ["JavaScript", "React Js"];
 
   return (
-    <section className="projects">
-      <Background />
-
+    <>
       <BackArrow />
-      {/* <h2 className="projects__title">Hechale un vistazo a mis proyectos</h2> */}
+      <section className="projects">
+        <Background />
+        {/* <h2 className="projects__title">Hechale un vistazo a mis proyectos</h2> */}
 
-      <ArticleProjects
-        projectName="Proyecto 1"
-        // technology={TECHNOLOGIES_PROJECT_1}
-        projectImage={PR1}
-      />
+        <ArticleProjects
+          projectName="Proyecto 1"
+          // technology={TECHNOLOGIES_PROJECT_1}
+          projectImage={PR1}
+        />
 
-      <ArticleProjects
-        projectName="Proyecto 2"
-        // technology={TECHNOLOGIES_PROJECT_2}
-        projectImage={PR1}
-      />
+        <ArticleProjects
+          projectName="Proyecto 2"
+          // technology={TECHNOLOGIES_PROJECT_2}
+          projectImage={PR1}
+        />
 
-      <ArticleProjects
-        projectName="Proyecto 3"
-        // technology={TECHNOLOGIES_PROJECT_3}
-        projectImage={PR1}
-      />
+        <ArticleProjects
+          projectName="Proyecto 3"
+          // technology={TECHNOLOGIES_PROJECT_3}
+          projectImage={PR1}
+        />
 
-      <ArticleProjects
-        projectName="Proyecto 4"
-        // technology={TECHNOLOGIES_PROJECT_4}
-        projectImage={PR1}
-      />
+        <ArticleProjects
+          projectName="Proyecto 4"
+          // technology={TECHNOLOGIES_PROJECT_4}
+          projectImage={PR1}
+        />
 
-      <ArticleProjects
-        projectName="Proyecto 5"
-        // technology={TECHNOLOGIES_PROJECT_5}
-        projectImage={PR1}
-      />
+        <ArticleProjects
+          projectName="Proyecto 5"
+          // technology={TECHNOLOGIES_PROJECT_5}
+          projectImage={PR1}
+        />
 
-      <ArticleProjects
-        projectName="Proyecto 6"
-        // technology={TECHNOLOGIES_PROJECT_6}
-        projectImage={PR1}
-      />
-    </section>
+        <ArticleProjects
+          projectName="Proyecto 6"
+          // technology={TECHNOLOGIES_PROJECT_6}
+          projectImage={PR1}
+        />
+      </section>
+    </>
   );
 }
 

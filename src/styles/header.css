@@ -39,7 +39,7 @@
   text-transform: uppercase;
   transition: .5s;
   z-index: 1;
-  font-family: inherit;
+  font-family: 'Orbitron', sans-serif;
   color: #17C3B2;
   font-weight: bold;
   letter-spacing: .5px;
@@ -70,12 +70,12 @@
 
 @media only screen and (max-width: 480px) {
   .header__list {
-    gap: .7rem;
+    gap: .3rem;
   }
-
+  
   .header__button {
     padding: 1rem ;
-    font-size: .8rem;
+    font-size: .7rem;
   }
 }
 

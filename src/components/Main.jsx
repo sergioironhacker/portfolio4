@@ -5,13 +5,13 @@ import "../styles/main.css";
 
 function Main() {
   /* useEffect(() => {
-    //? Name animation.
+  //   //? Name animation.
     const CONTAINER = document.getElementById("main__container");
     CONTAINER.addEventListener("click", () => {
       CONTAINER.classList.toggle("clicked");
     });
 
-    //? Meteor animation.
+  //   //? Meteor animation.
     const METEOR = document.querySelector(".meteor");
     METEOR.classList.add("meteor-hidden");
     setTimeout(() => {
@@ -22,14 +22,16 @@ function Main() {
     setTimeout(() => {
       SATELITE.classList.remove("satelite-hidden");
     }, 4000);
-  }, []); */
+   }, []); */
 
   return (
     <main className="main">
       <div className="main__container" id="main__container">
         <h1 className="main__title">
           Giovanni Liotta
-          <span className="main__span">~</span>
+          <br />
+          <br />
+          {/* <span className="main__span">~</span> */}
           Frontend Developer
         </h1>
       </div>

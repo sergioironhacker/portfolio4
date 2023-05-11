@@ -1,15 +1,14 @@
 .footer {
-    background-color:rgba(23, 195, 178, 0.1);
+    background-color:rgba(23, 195, 178, 0);
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;   
 }
 
 .footer__h2 {
-    font-family:Cambria, serif;
+    font-family: 'Orbitron', sans-serif;
     color: #1df2dc;   
-
 }
 
 @media only screen and (max-width: 480px) {
@@ -18,7 +17,7 @@
     }
 
     .footer__h2 { 
-      font-size: 1.3rem;
+      font-size: 1rem;
     }
 }
   
@@ -40,5 +39,11 @@
     .footer__h2 { 
       font-size: 1.5rem;
     }
+}
+
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+  .footer__h2 {
+    font-size: 1.1rem;
+  }
 }
   
