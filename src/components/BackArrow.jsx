@@ -1,3 +1,4 @@
+import "../styles/backarrow.css";
 import { Link } from "react-router-dom";
 import { AiOutlineDoubleLeft as ArrowLeft } from "react-icons/ai";
 

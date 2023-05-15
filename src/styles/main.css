@@ -4,7 +4,6 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 8rem;
-
 }
 
 .main__container {
@@ -12,31 +11,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: rgba(23, 195, 178, 0.1); */
   padding: 1rem;
   transition: all 0.5s ease;
-  background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .01)), linear-gradient(rgba(0, 0, 0, .01), rgba(0, 0, 0, .8));
-  background-size: 100% 10%;
-  background-position: top, bottom;
-  background-repeat: no-repeat;
-  
-}
-
-.main__container.clicked {
-  background-color: rgba(23, 195, 178, 0.4);
-  padding: 1rem;
-  transform: perspective(600px)  rotateX(0deg) rotateY(-20deg);
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  border-top-left-radius: 3rem;
-  border-bottom-left-radius: 3rem;
-  text-align: end;
 }
 
 .main__title {
-  /* text-shadow: 0 .5rem 1rem black; */
+  text-shadow: 0 0rem 2rem #1df2dc;
   font-family: 'Orbitron', sans-serif;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
   color: #1df2dc;
   font-weight: bold;
   text-align: center;
@@ -63,7 +45,7 @@
   }
 
   .main__title {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -116,13 +98,13 @@
 }
 
 /*? METEOR*/
-/*.meteor {
+.meteor {
   position: absolute;
-  width: 30px;
-  height: 30px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
-  animation: down 15s linear 1;
-  animation-delay: 22s;
+  animation: down 25s linear 1;
+  animation-delay: 3s;
   top: -30px;
   left: -30px;
   transition-duration: .1s;
@@ -149,34 +131,3 @@
 .meteor:hover {
   box-shadow: 0 0 10px #d3d3d3;
 } 
-*/
-/*? SATELITE*/
-/*
-.satelite {
-  z-index: 3;
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  top: 20%;
-  left: 80%;
-  animation: down 15s linear 1 forwards;
-  animation-delay: 4s;
-}
-
-.satelite-hidden {
-  opacity: 0;
-}
-
-@keyframes down {
-  0% {
-    left: -30px;
-    top: -30px;
-    transform: translateY(-50%) rotate(-45deg);
-  }
-  100% {
-    left: calc(100% + 30px);
-    top: calc(100% + 30px);
-    transform: translateY(50%) rotate(45deg);
-  }
-} 
-*/

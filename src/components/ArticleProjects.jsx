@@ -1,39 +1,40 @@
 import { AiFillGithub as GithubIcon } from "react-icons/ai";
 import { BsBoxArrowUpRight as BoxArrowUpIcon } from "react-icons/bs";
 
-function ArticleProjects({ projectName, projectImage }) {
+function ArticleProjects({
+  projectName,
+  projectImage,
+  projectGithub,
+  projectVisit,
+  projectDescription,
+}) {
   return (
     <article className="projects__article">
-      <h3 className="projects__subtitle">{projectName}</h3>
+      <div className="projects__container-name-img-icons">
+        <h3 className="projects__subtitle">{projectName}</h3>
+        <img className="projects__img" src={projectImage} />
+        <div className="projects__container-icons">
+          <a href={projectVisit} target="_blank">
+            <BoxArrowUpIcon
+              title="VISITAR PROYECTO"
+              className="projects__boxArrowUp-icon"
+            />
+          </a>
 
-      <img className="projects__img" src={projectImage} />
-      <div className="projects__container-icons">
-        <BoxArrowUpIcon
-          title="VISITAR PROYECTO"
-          className="projects__boxArrowUp-icon"
-        />
-        <GithubIcon
-          title="VISITAR REPOSITORIO"
-          className="projects__github-icon"
-        />
+          <a href={projectGithub} target="_blank">
+            <GithubIcon
+              title="VISITAR REPOSITORIO"
+              className="projects__github-icon"
+            />
+          </a>
+        </div>
       </div>
 
-      <p className="projects__description">
-        Juego de buscaminas para busacr minas re piolas en cualquier parte del
-        mundo lolear y sexo lol safiros
-      </p>
+      <div className="projects__container-tech-descrip">
+        <p className="projects__description">{projectDescription}</p>
+      </div>
     </article>
   );
 }
 
 export default ArticleProjects;
-
-{
-  /* <ol className="projects__list">
-  {technology.map((item, index) => (
-    <li key={index} className="projects__list-item">
-      {item}
-    </li>
-  ))}
-</ol>; */
-}

@@ -15,15 +15,22 @@ function ContactItems({ iconClass, href, textIcon, iconItem }) {
     }
   };
 
-  const HREF = () => (window.location.href = href);
+  const OPEN_EMAIL = () => {
+    if (href === "gioliotta.io@gmail.com") {
+      return window.open("mailto:gioliotta.io@gmail.com");
+    } else {
+      return;
+    }
+  };
 
   return (
-    <li onClick={HREF} className="contact__list-item">
-      <a className="contact__link">
+    <li onClick={OPEN_EMAIL} className="contact__list-item">
+      <a
+        className="contact__link"
+        target={href === "gioliotta.io@gmail.com" ? "" : "_blank"}
+        href={href}
+      >
         <p className="contact__text-icon">{textIcon}</p>
-
-        {/* {iconItem({ className: HANDLE_ICON_CLASS() })} */}
-
         <img src={iconItem} className={HANDLE_ICON_CLASS()} />
       </a>
     </li>

@@ -2,57 +2,49 @@ import "../styles/projects.css";
 import Background from "../components/Background";
 import BackArrow from "../components/BackArrow";
 import ArticleProjects from "../components/ArticleProjects";
-import PR1 from "../assets/img/pr1.jpeg";
+import taxiBarber from "../assets/img/taxiBarber.png";
+import rickAndMorty from "../assets/img/rick-morty.png";
+import passwordGenerator from "../assets/img/password-generator.png";
+import portafolio from "../assets/img/portafolio.png";
 
 function Projects() {
-  // const TECHNOLOGIES_PROJECT_1 = ["HTML5", "CSS3", "Tailwind"];
-  // const TECHNOLOGIES_PROJECT_2 = ["JavaScript", "React Js"];
-  // const TECHNOLOGIES_PROJECT_3 = ["HTML5", "CSS3", "Tailwind"];
-  // const TECHNOLOGIES_PROJECT_4 = ["JavaScript", "React Js"];
-  // const TECHNOLOGIES_PROJECT_5 = ["HTML5", "CSS3", "Tailwind"];
-  // const TECHNOLOGIES_PROJECT_6 = ["JavaScript", "React Js"];
-
   return (
     <>
       <BackArrow />
+
       <section className="projects">
         <Background />
-        {/* <h2 className="projects__title">Hechale un vistazo a mis proyectos</h2> */}
 
         <ArticleProjects
-          projectName="Proyecto 1"
-          // technology={TECHNOLOGIES_PROJECT_1}
-          projectImage={PR1}
+          projectName="taxiBarber"
+          projectImage={taxiBarber}
+          projectVisit="https://taxi-barber.netlify.app/"
+          projectGithub="https://github.com/gioliotta/TaxiBarber"
+          projectDescription="Web para barbería. Permite gestionar el precio de un corte de pelo. Desde el panel de configuración se puede modificar: precio mínimo, precio máximo, cada cuanto tiempo y cuanto incrementa el precio."
         />
 
         <ArticleProjects
-          projectName="Proyecto 2"
-          // technology={TECHNOLOGIES_PROJECT_2}
-          projectImage={PR1}
+          projectName="rick y morty"
+          projectImage={rickAndMorty}
+          projectVisit="https://browser-rick-and-morty.netlify.app/"
+          projectGithub="https://github.com/gioliotta/browser-rickAndMorty"
+          projectDescription="Explora y busca iformación sobre los personajes de la serie animada"
         />
 
         <ArticleProjects
-          projectName="Proyecto 3"
-          // technology={TECHNOLOGIES_PROJECT_3}
-          projectImage={PR1}
+          projectName="generador de contraseñas"
+          projectImage={passwordGenerator}
+          projectVisit="https://passwords-generator-gioliotta.netlify.app/"
+          projectGithub="https://github.com/gioliotta/generator-passwords"
+          projectDescription="Genera contraseñas aleatorias con una longitud personalizable y la capacidad de agregar caracteres especiales para aumentar la seguridad. El usuario puede copiar la contraseña generada y usarla en cualquier lugar."
         />
 
         <ArticleProjects
-          projectName="Proyecto 4"
-          // technology={TECHNOLOGIES_PROJECT_4}
-          projectImage={PR1}
-        />
-
-        <ArticleProjects
-          projectName="Proyecto 5"
-          // technology={TECHNOLOGIES_PROJECT_5}
-          projectImage={PR1}
-        />
-
-        <ArticleProjects
-          projectName="Proyecto 6"
-          // technology={TECHNOLOGIES_PROJECT_6}
-          projectImage={PR1}
+          projectName="portafolio"
+          projectImage={portafolio}
+          projectVisit="https://portfolio-gioliotta.netlify.app/"
+          projectGithub="https://github.com/gioliotta/portfolio-gioliotta"
+          projectDescription="Portafolio personal hecho mayormente con CSS"
         />
       </section>
     </>

@@ -1,3 +1,5 @@
+import "../styles/stars.css";
+
 function Background() {
   return (
     <div class="stars">
