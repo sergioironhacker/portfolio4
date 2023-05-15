@@ -1,4 +1,5 @@
 import "../styles/contact.css";
+import { useEffect, useState } from "react";
 import BackArrow from "../components/BackArrow";
 import Background from "../components/Background";
 import ContactItems from "../components/ContactItems";
@@ -7,6 +8,27 @@ import github from "../assets/img/githubSvg.svg";
 import email from "../assets/img/emailSvg.svg";
 
 function Contact() {
+  const [svgLoaded, setSvgLoaded] = useState(false);
+
+  useEffect(() => {
+    const preloadedImages = [linkedin, github, email];
+    const imagePromises = preloadedImages.map(imageSrc => {
+      return new Promise((resolve, reject) => {
+        const image = new Image();
+        image.src = imageSrc;
+        image.onload = resolve;
+        image.onerror = reject;
+      });
+    });
+
+    Promise.all(imagePromises)
+      .then(() => {
+        setSvgLoaded(true);
+      })
+      .catch(error => {
+        console.error("Error preloading images:", error);
+      });
+  }, []);
   return (
     <section className="contact">
       <Background />
@@ -16,6 +38,7 @@ function Contact() {
       <nav className="contact__nav">
         <ul className="contact__list">
           <ContactItems
+            svgLoaded={setSvgLoaded}
             textIcon="Giovanni Liotta"
             iconItem={linkedin}
             iconClass="linkedin"
@@ -23,6 +46,7 @@ function Contact() {
           />
 
           <ContactItems
+            svgLoaded={setSvgLoaded}
             textIcon="gioliotta"
             iconItem={github}
             iconClass="github"
@@ -30,6 +54,7 @@ function Contact() {
           />
 
           <ContactItems
+            svgLoaded={setSvgLoaded}
             textIcon="gioliotta.io@gmail.com"
             iconItem={email}
             iconClass="email"

@@ -1,4 +1,4 @@
-function ContactItems({ iconClass, href, textIcon, iconItem }) {
+function ContactItems({ iconClass, href, textIcon, iconItem, svgLoaded }) {
   const HANDLE_ICON_CLASS = () => {
     switch (iconClass) {
       case "linkedin":
@@ -31,7 +31,7 @@ function ContactItems({ iconClass, href, textIcon, iconItem }) {
         href={href}
       >
         <p className="contact__text-icon">{textIcon}</p>
-        <img src={iconItem} className={HANDLE_ICON_CLASS()} />
+        {svgLoaded && <img src={iconItem} className={HANDLE_ICON_CLASS()} />}
       </a>
     </li>
   );
