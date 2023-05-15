@@ -18,12 +18,27 @@
   letter-spacing: .5px;
   column-gap: 1rem;
   font-size: 1rem;  
-  
+
 }
   
 .f11__img {
   width: 2.5rem;
   height: 2.5rem;
+  animation: f11 2s infinite normal;
+}
+
+@keyframes f11 {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 .f11__message-enter {
