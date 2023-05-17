@@ -1,4 +1,15 @@
-function ContactItems({ iconClass, href, textIcon, iconItem, svgLoaded }) {
+import { useState, useEffect } from "react";
+import ContentLoader from "react-content-loader";
+
+function ContactItems({ iconClass, href, textIcon, iconItem }) {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const image = new Image();
+    image.src = iconItem;
+    image.onload = () => setLoading(false);
+  }, [iconItem]);
+
   const HANDLE_ICON_CLASS = () => {
     switch (iconClass) {
       case "linkedin":
@@ -24,16 +35,28 @@ function ContactItems({ iconClass, href, textIcon, iconItem, svgLoaded }) {
   };
 
   return (
-    <li onClick={OPEN_EMAIL} className="contact__list-item">
-      <a
-        className="contact__link"
-        target={href === "gioliotta.io@gmail.com" ? "" : "_blank"}
-        href={href}
-      >
-        <p className="contact__text-icon">{textIcon}</p>
-        {svgLoaded && <img src={iconItem} className={HANDLE_ICON_CLASS()} />}
-      </a>
-    </li>
+    <>
+      {loading ? (
+        <ContentLoader
+          animationDuration={2000}
+          backgroundColor="rgba(23, 195, 178, 0.2)"
+        >
+          <rect width="100%" height="5rem" />
+        </ContentLoader>
+      ) : (
+        <li onClick={OPEN_EMAIL} className="contact__list-item">
+          <a
+            className="contact__link"
+            target={href === "gioliotta.io@gmail.com" ? "" : "_blank"}
+            href={href}
+          >
+            <p className="contact__text-icon">{textIcon}</p>
+
+            <img src={iconItem} className={HANDLE_ICON_CLASS()} />
+          </a>
+        </li>
+      )}
+    </>
   );
 }
 

@@ -27,10 +27,7 @@ function AboutMe() {
         <br />
         <br />
         Llevo más de un año mejorando mis habilidades enfocadas en el front-end,
-        desarrollando con tecnologías como <Technologies /> Además, estoy
-        ampliando mis habilidades en el desarrollo de aplicaciones de
-        escritorio, para lo cual me encuentro estudiando y realizando proyectos
-        con <span className="technologies">Electron</span>.
+        desarrollando con tecnologías como <Technologies />
         <br />
         <br />
         Creo sitios web responsive con experiencias de usuario atractivas,
