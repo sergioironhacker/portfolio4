@@ -28,7 +28,7 @@ function Projects() {
           projectImage={rickAndMorty}
           projectVisit="https://browser-rick-and-morty.netlify.app/"
           projectGithub="https://github.com/gioliotta/browser-rickAndMorty"
-          projectDescription="Explora y busca iformación sobre los personajes de la serie animada"
+          projectDescription="Explorador de la API de Rick and Morty, permite a los usuarios buscar y explorar información sobre los personajes, episodios y ubicaciones. En este proyecto trabajé con una API externa y mejoré mi comprensión de la estructura y el flujo de datos."
         />
 
         <ArticleProjects
@@ -36,7 +36,7 @@ function Projects() {
           projectImage={passwordGenerator}
           projectVisit="https://passwords-generator-gioliotta.netlify.app/"
           projectGithub="https://github.com/gioliotta/generator-passwords"
-          projectDescription="Genera contraseñas aleatorias con una longitud personalizable y la capacidad de agregar caracteres especiales para aumentar la seguridad. El usuario puede copiar la contraseña generada y usarla en cualquier lugar."
+          projectDescription="Genera contraseñas aleatorias con una longitud personalizable y la capacidad de agregar caracteres especiales para aumentar la seguridad. El usuario puede copiar la contraseña generada y usarla en cualquier lugar. Aprendí a manipular y generar cadenas de caracteres de manera aleatoria para aplicar una solución efectiva."
         />
 
         <ArticleProjects
@@ -44,7 +44,7 @@ function Projects() {
           projectImage={portafolio}
           projectVisit="https://portfolio-gioliotta.netlify.app/"
           projectGithub="https://github.com/gioliotta/portfolio-gioliotta"
-          projectDescription="Portafolio personal hecho mayormente con CSS"
+          projectDescription="Portafolio personal hecho mayormente con CSS."
         />
       </section>
     </>
