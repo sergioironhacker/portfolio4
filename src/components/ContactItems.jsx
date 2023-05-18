@@ -47,7 +47,7 @@ function ContactItems({ iconClass, href, textIcon, iconItem }) {
         <li onClick={OPEN_EMAIL} className="contact__list-item">
           <a
             className="contact__link"
-            target={href === "gioliotta.io@gmail.com" ? "" : "_blank"}
+            target={href === "gioliotta.io@gmail.com" ? "_self" : "_blank"}
             href={href}
           >
             <p className="contact__text-icon">{textIcon}</p>
