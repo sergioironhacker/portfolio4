@@ -27,7 +27,7 @@ function ContactItems({ iconClass, href, textIcon, iconItem }) {
   };
 
   const OPEN_EMAIL = () => {
-    if (href === "gioliotta.io@gmail.com") {
+    if (textIcon === "gioliotta.io@gmail.com") {
       return window.open("mailto:gioliotta.io@gmail.com");
     } else {
       return;
@@ -45,11 +45,7 @@ function ContactItems({ iconClass, href, textIcon, iconItem }) {
         </ContentLoader>
       ) : (
         <li onClick={OPEN_EMAIL} className="contact__list-item">
-          <a
-            className="contact__link"
-            target={href === "gioliotta.io@gmail.com" ? "_self" : "_blank"}
-            href={href}
-          >
+          <a className="contact__link" target="_blank" href={href}>
             <p className="contact__text-icon">{textIcon}</p>
 
             <img src={iconItem} className={HANDLE_ICON_CLASS()} />

@@ -34,7 +34,6 @@ function Contact() {
             textIcon="gioliotta.io@gmail.com"
             iconItem={email}
             iconClass="email"
-            href="gioliotta.io@gmail.com"
           />
         </ul>
       </nav>
