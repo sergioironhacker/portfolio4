@@ -29,9 +29,9 @@ const ROUTER = createBrowserRouter([
     path: "/contact",
     element: <Contact />,
   },
-  {
-    path: "/cv-giovanni-liotta.pdf",
-  },
+  // {
+  //   path: "/cv-giovanni-liotta.pdf",
+  // },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
