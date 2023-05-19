@@ -7,12 +7,12 @@ import AboutMe from "./routes/AboutMe";
 import Projects from "./routes/Projects";
 import Contact from "./routes/Contact";
 
-window.addEventListener("load", () => {
-  const currentPath = window.location.pathname;
-  if (currentPath !== "/") {
-    window.location.href = "/";
-  }
-});
+// window.addEventListener("load", () => {
+//   const currentPath = window.location.pathname;
+//   if (currentPath !== "/") {
+//     window.location.href = "/";
+//   }
+// });
 
 const ROUTER = createBrowserRouter([
   {

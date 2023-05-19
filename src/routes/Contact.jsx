@@ -35,12 +35,12 @@ function Contact() {
             iconClass="email"
           />
 
-          <ContactItems
+          {/* <ContactItems
             href="/cv-giovanni-liotta.pdf"
             iconClass="cv"
             textIcon="Ver CV"
             iconItem={cv}
-          />
+          /> */}
         </ul>
       </nav>
     </section>
