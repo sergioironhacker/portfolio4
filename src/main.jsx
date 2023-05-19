@@ -7,6 +7,13 @@ import AboutMe from "./routes/AboutMe";
 import Projects from "./routes/Projects";
 import Contact from "./routes/Contact";
 
+window.addEventListener("load", () => {
+  const currentPath = window.location.pathname;
+  if (currentPath !== "/") {
+    window.location.href = "/";
+  }
+});
+
 const ROUTER = createBrowserRouter([
   {
     path: "/",
@@ -29,9 +36,6 @@ const ROUTER = createBrowserRouter([
     path: "/contact",
     element: <Contact />,
   },
-  // {
-  //   path: "/cv-giovanni-liotta.pdf",
-  // },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
