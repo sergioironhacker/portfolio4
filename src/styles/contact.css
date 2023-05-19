@@ -48,23 +48,18 @@
   align-items: center;
 }
 
-/* .contact__icon {} */
-
-.linkedin {
-  border: 1px solid #fff;
+.contact__icon {
+  width: 3rem;
   border-radius: .5rem;
-  width: 3rem;
 }
 
-.github {
-  color: #000;
-  width: 3rem;
-}
+.linkedin { border: 1px solid #fff; }
 
-.email {
-  border-radius: .5rem;
-  width: 3rem;
-}
+/* .github {} */
+
+/* .email {} */
+
+/* .cv {} */
 
 
 .contact__text-icon {

@@ -5,6 +5,7 @@ import ContactItems from "../components/ContactItems";
 import linkedin from "../assets/img/linkedinSvg.svg";
 import github from "../assets/img/githubSvg.svg";
 import email from "../assets/img/emailSvg.svg";
+import cv from "../assets/img/cvSvg.svg";
 
 function Contact() {
   return (
@@ -22,18 +23,23 @@ function Contact() {
             iconClass="linkedin"
             href="https://www.linkedin.com/in/giovanniliotta/"
           />
-
           <ContactItems
             textIcon="gioliotta"
             iconItem={github}
             iconClass="github"
             href="https://github.com/gioliotta"
           />
-
           <ContactItems
             textIcon="gioliotta.io@gmail.com"
             iconItem={email}
             iconClass="email"
+          />
+
+          <ContactItems
+            href="/cv-giovanni-liotta.pdf"
+            iconClass="cv"
+            textIcon="Ver CV"
+            iconItem={cv}
           />
         </ul>
       </nav>

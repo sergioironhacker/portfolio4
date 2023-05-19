@@ -1,22 +1,10 @@
 import "../styles/aboutme.css";
+import Technologies from "../components/Technologies";
+import CVButton from "../components/CvButton";
 import Background from "../components/Background";
 import BackArrow from "../components/BackArrow";
 
 function AboutMe() {
-  function Technologies() {
-    return (
-      <>
-        <span className="technologies"> HTML</span>,
-        <span className="technologies"> CSS</span>,
-        <span className="technologies"> Bootstrap</span>,
-        <span className="technologies"> Tailwind</span>,
-        <span className="technologies"> JavaScript</span>,
-        <span className="technologies"> React Js</span> y
-        <span className="technologies"> GIT</span>.
-      </>
-    );
-  }
-
   return (
     <section className="aboutme">
       <Background />
@@ -39,6 +27,8 @@ function AboutMe() {
         Me interesa aportar valor a la empresa y contribuir al crecimiento del
         equipo. Tengo 20 años de edad y vivo en Mendoza, Argentina.
       </p>
+
+      <CVButton />
     </section>
   );
 }

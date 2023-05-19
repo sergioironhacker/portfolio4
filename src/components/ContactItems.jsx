@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import ContentLoader from "react-content-loader";
 
-function ContactItems({ iconClass, href, textIcon, iconItem }) {
+function ContactItems({ iconClass, href, textIcon, iconItem, download }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -20,6 +20,9 @@ function ContactItems({ iconClass, href, textIcon, iconItem }) {
 
       case "email":
         return "contact__icon email";
+
+      case "cv":
+        return "contact__icon cv";
 
       default:
         return "contact__icon";
@@ -45,7 +48,12 @@ function ContactItems({ iconClass, href, textIcon, iconItem }) {
         </ContentLoader>
       ) : (
         <li onClick={OPEN_EMAIL} className="contact__list-item">
-          <a className="contact__link" target="_blank" href={href}>
+          <a
+            className="contact__link"
+            target="_blank"
+            href={href}
+            download={download}
+          >
             <p className="contact__text-icon">{textIcon}</p>
 
             <img src={iconItem} className={HANDLE_ICON_CLASS()} />
