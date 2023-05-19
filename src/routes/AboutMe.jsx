@@ -1,6 +1,6 @@
 import "../styles/aboutme.css";
 import Technologies from "../components/Technologies";
-import CVButton from "../components/CvButton";
+import CVButton from "../components/CVButton";
 import Background from "../components/Background";
 import BackArrow from "../components/BackArrow";
 
