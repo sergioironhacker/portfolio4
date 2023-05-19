@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import ContentLoader from "react-content-loader";
 
-function ContactItems({ iconClass, href, textIcon, iconItem, download }) {
+function ContactItems({ iconClass, href, textIcon, iconItem }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -48,16 +49,19 @@ function ContactItems({ iconClass, href, textIcon, iconItem, download }) {
         </ContentLoader>
       ) : (
         <li onClick={OPEN_EMAIL} className="contact__list-item">
-          <a
-            className="contact__link"
-            target="_blank"
-            href={href}
-            download={download}
-          >
-            <p className="contact__text-icon">{textIcon}</p>
+          {iconClass === "cv" ? (
+            <Link className="contact__link" target="_blank" to={href}>
+              <p className="contact__text-icon">{textIcon}</p>
 
-            <img src={iconItem} className={HANDLE_ICON_CLASS()} />
-          </a>
+              <img src={iconItem} className={HANDLE_ICON_CLASS()} />
+            </Link>
+          ) : (
+            <a className="contact__link" target="_blank" href={href}>
+              <p className="contact__text-icon">{textIcon}</p>
+
+              <img src={iconItem} className={HANDLE_ICON_CLASS()} />
+            </a>
+          )}
         </li>
       )}
     </>

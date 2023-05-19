@@ -1,12 +1,14 @@
+import { Link } from "react-router-dom";
+
 const CVButton = () => (
   <div className="aboutme__container-cvbutton">
-    <a
+    <Link
       className="aboutme__a-cvbutton"
-      href="/cv-giovanni-liotta.pdf"
+      to="/cv-giovanni-liotta.pdf"
       target="_blank"
     >
       <p className="aboutme__text-cvbutton">Ver CV</p>
-    </a>
+    </Link>
   </div>
 );
 

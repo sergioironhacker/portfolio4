@@ -3,23 +3,23 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <header class="header">
-      <nav class="header__nav">
-        <ul class="header__list">
-          <li class="header__list-item">
-            <Link to="/aboutme" class="header__link">
+    <header className="header">
+      <nav className="header__nav">
+        <ul className="header__list">
+          <li className="header__list-item">
+            <Link to="/aboutme" className="header__link">
               <button className="header__button">Sobre&nbsp;mi</button>
             </Link>
           </li>
 
-          <li class="header__list-item">
-            <Link to="/projects" class="header__link">
+          <li className="header__list-item">
+            <Link to="/projects" className="header__link">
               <button className="header__button">Proyectos</button>
             </Link>
           </li>
 
-          <li class="header__list-item">
-            <Link to="/contact" class="header__link">
+          <li className="header__list-item">
+            <Link to="/contact" className="header__link">
               <button className="header__button">Contacto</button>
             </Link>
           </li>
