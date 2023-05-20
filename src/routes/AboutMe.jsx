@@ -28,7 +28,7 @@ function AboutMe() {
         equipo. Tengo 20 años de edad y vivo en Mendoza, Argentina.
       </p>
 
-      {/* <CVButton /> */}
+      <CVButton />
     </section>
   );
 }
