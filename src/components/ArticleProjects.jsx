@@ -53,7 +53,7 @@ function ArticleProjects({
       </div>
 
       <div className="projects__container-tech-descrip">
-        <p className="projects__description">{projectDescription}</p>
+        <p>{projectDescription}</p>
       </div>
     </article>
   );
