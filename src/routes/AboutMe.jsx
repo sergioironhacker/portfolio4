@@ -1,8 +1,8 @@
 import "../styles/aboutme.css";
-import Technologies from "../components/Technologies";
-import CVButton from "../components/CVButton";
-import Background from "../components/Background";
-import BackArrow from "../components/BackArrow";
+import Background from "../components/background/Background";
+import BackArrow from "../components/backArrow/BackArrow";
+import Technologies from "../components/aboutMe/Technologies";
+import CVButton from "../components/aboutMe/CVButton";
 
 function AboutMe() {
   return (

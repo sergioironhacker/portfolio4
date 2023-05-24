@@ -1,9 +1,9 @@
-import "../styles/f11message.css";
+import "../f11Message/f11Message.css";
 import { useState } from "react";
 import { CSSTransition as F11Animation } from "react-transition-group";
-import f11 from "../assets/img/f11.png";
+import f11Img from "../../assets/img/f11Img.png";
 
-function F11Menssage() {
+function F11Message() {
   const [showMessageF11, setShowMessageF11] = useState(false);
 
   addEventListener("load", function () {
@@ -16,14 +16,16 @@ function F11Menssage() {
   });
 
   function handleFullscreen() {
-    if (document.documentElement.requestFullscreen) {
-      document.documentElement.requestFullscreen();
-    } else if (document.documentElement.mozRequestFullScreen) {
-      document.documentElement.mozRequestFullScreen();
-    } else if (document.documentElement.webkitRequestFullscreen) {
-      document.documentElement.webkitRequestFullscreen();
-    } else if (document.documentElement.msRequestFullscreen) {
-      document.documentElement.msRequestFullscreen();
+    const element = document.documentElement;
+
+    if (element.requestFullscreen) {
+      element.requestFullscreen();
+    } else if (element.mozRequestFullScreen) {
+      element.mozRequestFullScreen();
+    } else if (element.webkitRequestFullscreen) {
+      element.webkitRequestFullscreen();
+    } else if (element.msRequestFullscreen) {
+      element.msRequestFullscreen();
     }
   }
 
@@ -36,7 +38,7 @@ function F11Menssage() {
       <div className="f11__message">
         para mayor inmersión presione aquí
         <img
-          src={f11}
+          src={f11Img}
           onClick={handleFullscreen}
           className="f11__img"
           alt="F11"
@@ -46,4 +48,4 @@ function F11Menssage() {
   );
 }
 
-export default F11Menssage;
+export default F11Message;

@@ -19,7 +19,7 @@ const ROUTER = createBrowserRouter([
     path: "/",
     element: <Home />,
     errorElement: (
-      <div className="spiderman_no_way_home">
+      <div className="nullroute">
         <h1>La ruta especificada, no existe</h1>,
       </div>
     ),
@@ -39,5 +39,5 @@ const ROUTER = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <RouterProvider router={ROUTER}></RouterProvider>,
+  <RouterProvider router={ROUTER} />,
 );

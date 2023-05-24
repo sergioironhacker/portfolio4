@@ -25,35 +25,6 @@
     font-family: 'Raleway', sans-serif;
 }
 
-.technologies {
-  color: #1df2dc;
-  font-weight: 600;
-  font-family: "Raleway", sans-serif;
-}
-
-.aboutme__container-cvbutton {
-  padding: 1rem; 
-  border-radius: 1rem;
-  margin-top: 3rem;
-}
-
-.aboutme__a-cvbutton {
-  text-decoration: none;
-}
-
-.aboutme__text-cvbutton {
-  cursor: pointer;
-  text-transform: uppercase;
-  font-family: "Raleway", sans-serif;
-  letter-spacing: 1px;
-  color: #1df2dc;
-}
-
-.aboutme__text-cvbutton:hover {
-  color: white;
-}
-
-
 @media only screen and (max-width: 480px) {
     .aboutme__tittle {
         font-size: 2rem;

@@ -1,7 +1,7 @@
 import "../styles/contact.css";
-import BackArrow from "../components/BackArrow";
-import Background from "../components/Background";
-import ContactItems from "../components/ContactItems";
+import Background from "../components/background/Background";
+import BackArrow from "../components/backArrow/BackArrow";
+import ContactItems from "../components/contactItems/ContactItems";
 import linkedin from "../assets/img/linkedinSvg.svg";
 import github from "../assets/img/githubSvg.svg";
 import email from "../assets/img/emailSvg.svg";
@@ -18,28 +18,30 @@ function Contact() {
       <nav className="contact__nav">
         <ul className="contact__list">
           <ContactItems
-            textIcon="Giovanni Liotta"
             iconItem={linkedin}
-            iconClass="linkedin"
+            textIcon="Giovanni Liotta"
             href="https://www.linkedin.com/in/giovanniliotta/"
+            iconClass="linkedin"
           />
+
           <ContactItems
-            textIcon="gioliotta"
             iconItem={github}
-            iconClass="github"
+            textIcon="gioliotta"
             href="https://github.com/gioliotta"
+            iconClass="github"
           />
+
           <ContactItems
-            textIcon="gioliotta.io@gmail.com"
             iconItem={email}
+            textIcon="gioliotta.io@gmail.com"
             iconClass="email"
           />
 
           <ContactItems
+            iconItem={cv}
+            textIcon="Ver CV"
             href="/cv-giovanni-liotta.pdf"
             iconClass="cv"
-            textIcon="Ver CV"
-            iconItem={cv}
           />
         </ul>
       </nav>

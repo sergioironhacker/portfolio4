@@ -1,5 +1,5 @@
 .footer {
-    background-color:rgba(23, 195, 178, 0);
+    background-color: transparent;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -20,44 +20,36 @@
 }
 
 @media only screen and (max-width: 480px) {
-    .footer {
-      height: 2.5rem;
-    }
+  .footer {
+    height: 2.5rem;
+  }
 
-    .footer__status { 
-      font-size: 1rem;
-    }
-
-    .footer__active {
-      font-size: 1rem;
-    }
+  .footer__status,
+  .footer__active {
+    font-size: 1rem;
+  }
 }
-  
+
 @media only screen and (min-width: 481px) and (max-width: 1024px) {
-    .footer {
-      height: 2.6rem;
-    }
+  .footer {
+    height: 2.6rem;
+  }
 
-    .footer__status { 
-      font-size: 1.4rem;
-    }
-
-    .footer__active {
-      font-size: 1.4rem;
-    }
+  .footer__status,
+  .footer__active {
+    font-size: 1.4rem;
+  }
 }
 
 @media only screen and (min-width: 1025px) {
-    .footer {
-      height: 2.7rem;
-    }
+  .footer {
+    height: 2.7rem;
+  }
 
-    .footer__status { 
-      font-size: 1.5rem;
-    }
-    .footer__active {
-      font-size: 1.5rem;
-    }
+  .footer__status,
+  .footer__active {
+    font-size: 1.5rem;
+  }
 }
 
 @media only screen and (max-width: 1024px) and (orientation: landscape) {

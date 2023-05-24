@@ -1,8 +1,8 @@
-import "../styles/stars.css";
+import "../background/background.css";
 
 function Background() {
   return (
-    <div class="stars">
+    <div className="stars">
       <div id="stars"></div>
       <div id="stars2"></div>
       <div id="stars3"></div>

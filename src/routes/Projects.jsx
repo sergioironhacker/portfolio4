@@ -1,9 +1,9 @@
 import "../styles/projects.css";
 import { AiOutlineArrowUp as ArrowUp } from "react-icons/ai";
-import Background from "../components/Background";
-import BackArrow from "../components/BackArrow";
-import ArticleProjects from "../components/ArticleProjects";
-import ProjectDescription from "../components/ProjectDescription";
+import BackArrow from "../components/backArrow/BackArrow";
+import Background from "../components/background/Background";
+import ArticleProject from "../components/projects/ArticleProject";
+import ProjectDescription from "../components/projects/ProjectDescription";
 import smartArtGenerator from "../assets/img/smartArtGenerator.png";
 import taxiBarber from "../assets/img/taxiBarber.png";
 import rickAndMorty from "../assets/img/rick-morty.png";
@@ -15,10 +15,10 @@ function Projects() {
     <>
       <BackArrow />
 
-      <section className="projects" id="projects">
+      <section className="project" id="project">
         <Background />
 
-        <ArticleProjects
+        {/*<ArticleProject
           projectName="smartArt generator"
           projectImage={smartArtGenerator}
           projectVisit="https://smartart-generator.netlify.app/"
@@ -31,9 +31,9 @@ function Projects() {
               itemThree="Botón para descargar la imagen generada."
             />
           }
-        />
+        />*/}
 
-        <ArticleProjects
+        <ArticleProject
           projectName="taxiBarber"
           projectImage={taxiBarber}
           projectVisit="https://taxi-barber.netlify.app/"
@@ -48,7 +48,7 @@ function Projects() {
           }
         />
 
-        <ArticleProjects
+        <ArticleProject
           projectName="rick & morty"
           projectImage={rickAndMorty}
           projectVisit="https://browser-rick-and-morty.netlify.app/"
@@ -63,7 +63,7 @@ function Projects() {
           }
         />
 
-        <ArticleProjects
+        <ArticleProject
           projectName="generador de contraseñas"
           projectImage={passwordGenerator}
           projectVisit="https://passwords-generator-gioliotta.netlify.app/"
@@ -78,7 +78,7 @@ function Projects() {
           }
         />
 
-        <ArticleProjects
+        <ArticleProject
           projectName="portafolio"
           projectImage={portafolio}
           projectVisit="https://portfolio-gioliotta.netlify.app/"
@@ -93,15 +93,15 @@ function Projects() {
           }
         />
 
-        <div className="projects__container-arrowup-btn">
-          <a href="#projects">
-            <ArrowUp className="projects__arrowup" />
+        <div className="project__container-arrowup-btn">
+          <a href="#project">
+            <ArrowUp className="project__arrowup" />
           </a>
 
-          <button className="btn-more-projects">
+          <button className="btn-more-project">
             <a
-              className="btn-more-projects__link"
               href="https://github.com/gioliotta?tab=repositories"
+              className="btn-more-project__link"
               target="_blank"
             >
               ¡Más proyectos!
