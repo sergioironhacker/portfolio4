@@ -5,20 +5,19 @@ import ItemContact from "./ItemContact";
 function ContactItems({ iconClass, href, textIcon, iconItem }) {
   const LOADING = useImageLoader(iconItem);
 
-  return (
-    <>
-      {LOADING ? (
-        <LoadingAnimation isCircle={false} />
-      ) : (
-        <ItemContact
-          textIcon={textIcon}
-          iconClass={iconClass}
-          href={href}
-          iconItem={iconItem}
-        />
-      )}
-    </>
-  );
+  if (LOADING) {
+    return <LoadingAnimation isCircle={false} />;
+  } else {
+    return (
+      <ItemContact
+        textIcon={textIcon}
+        iconClass={iconClass}
+        href={href}
+        iconItem={iconItem}
+      />
+    );
+  }
 }
 
 export default ContactItems;
+// Utilizar Skeleton

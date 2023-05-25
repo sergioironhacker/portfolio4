@@ -5,7 +5,6 @@
   font-size: 2.4rem;
   color: #1df2dc;
   transition-duration: .2s;
-  margin: 3rem;
 }
 
 .backarrow__btn:hover {
@@ -22,12 +21,14 @@
 @media only screen and (min-width: 481px) and (max-width: 1024px) {
    .backarrow__btn {
        font-size: 2.2rem;
+       margin: 2rem;
    }
 }
 
 @media only screen and (min-width: 1025px) {
    .backarrow__btn {
        font-size: 2.4rem;
+       margin: 3rem;
    }
 }
   

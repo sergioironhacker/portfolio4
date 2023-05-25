@@ -4,6 +4,10 @@
   padding: 3rem 1rem 1rem 1rem;
 }
 
+.project__article:nth-child(2) {
+  margin-top: 3rem;
+}
+
 .project__article {
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 1rem;
@@ -166,11 +170,6 @@
 }
 
 @media only screen and (max-width: 480px) {
-  .backarrow-btn {
-    margin: 0;
-    padding: .3rem;
-  }
-
   .project {
     row-gap: 3rem;
     display: flex;
@@ -221,11 +220,6 @@
 }
 
 @media only screen and (min-width: 481px) and (max-width: 1024px) {
-  .backarrow-btn {
-    margin: 0;
-    padding: .3rem;
-  }
-
   .project {
     row-gap: 3rem;
     display: flex;

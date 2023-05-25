@@ -1,4 +1,4 @@
-import React from "react";
+import React, { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -10,7 +10,7 @@ import Contact from "./routes/Contact";
 window.addEventListener("load", () => {
   const currentPath = window.location.pathname;
   if (currentPath !== "/") {
-    window.location.href = "/";
+    return (window.location.href = "/");
   }
 });
 

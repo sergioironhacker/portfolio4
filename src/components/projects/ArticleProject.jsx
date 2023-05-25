@@ -1,37 +1,31 @@
 import { useImageLoader } from "../loading/LoadingComponent";
 import LoadingAnimation from "../loading/LoadingAnimation";
-import BtnProject from "./BtnProject";
+import ButtonsProject from "./ButtonsProject";
+import Btn from "./Btn";
+import Description from "./Description";
 
-function ArticleProject({
-  projectName,
-  projectImage,
-  projectGithub,
-  projectVisit,
-  projectDescription,
-}) {
-  const LOADING = useImageLoader(projectImage);
+function ArticleProject({ name, image, visitGitHub, visitPage, description }) {
+  const LOADING = useImageLoader(image);
 
   return (
     <article className="project__article">
       <div className="project__container-name-img-icons">
-        <h3 className="project__subtitle">{projectName}</h3>
+        <h3 className="project__subtitle">{name}</h3>
 
         {LOADING ? (
           <LoadingAnimation isCircle />
         ) : (
-          <img className="project__img" src={projectImage} alt={projectName} />
+          <img className="project__img" src={image} alt={name} />
         )}
 
-        <div className="project__container-icons">
-          <BtnProject isGitHub={false} visitPage={projectVisit} />
+        <ButtonsProject>
+          <Btn isGitHub={false} visitPage={visitPage} />
 
-          <BtnProject isGitHub visitPage={projectGithub} />
-        </div>
+          <Btn isGitHub visitGitHub={visitGitHub} />
+        </ButtonsProject>
       </div>
 
-      <div className="project__container-tech-descrip">
-        <p>{projectDescription}</p>
-      </div>
+      <Description>{description}</Description>
     </article>
   );
 }
