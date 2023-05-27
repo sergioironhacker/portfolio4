@@ -8,10 +8,13 @@ function F11Message() {
 
   addEventListener("load", function () {
     if (!window.fullScreen) {
-      setShowMessageF11(true);
+      setTimeout(() => {
+        setShowMessageF11(true);
+      }, 2000);
+
       setTimeout(() => {
         setShowMessageF11(false);
-      }, 5000);
+      }, 9000);
     }
   });
 
@@ -36,7 +39,7 @@ function F11Message() {
       classNames="f11__message"
     >
       <div className="f11__message">
-        para mayor inmersión presione aquí
+        para mayor inmersión presione
         <img
           src={f11Img}
           onClick={handleFullscreen}

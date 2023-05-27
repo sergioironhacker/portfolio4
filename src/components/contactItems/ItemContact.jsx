@@ -31,17 +31,3 @@ function ItemContact({ textIcon, iconClass, href, iconItem }) {
 }
 
 export default ItemContact;
-
-// {iconClass === "cv" ? (
-//   <Link className="contact__link" target="_blank" to={href}>
-//     <p className="contact__text-icon">{textIcon}</p>
-
-//     <img src={iconItem} className={handleIconClass()} />
-//   </Link>
-// ) : (
-//   <a className="contact__link" target="_blank" href={href}>
-//     <p className="contact__text-icon">{textIcon}</p>
-
-//     <img src={iconItem} className={handleIconClass()} />
-//   </a>
-// )}

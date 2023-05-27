@@ -1,7 +1,8 @@
 .project {
   background-color: rgba(23, 195, 178, 0.2);
   min-height: 100vh;
-  padding: 3rem 1rem 1rem 1rem;
+  padding: 7rem 1rem 1rem 1rem;
+  overflow-x: hidden;
 }
 
 .project__article:nth-child(2) {

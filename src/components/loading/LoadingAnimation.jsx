@@ -6,7 +6,7 @@ function LoadingAnimation({ isCircle }) {
       {isCircle ? (
         <circle cx="50%" cy="50%" r="20%" />
       ) : (
-        <rect width="100%" height="5rem" />
+        <rect width="100%" height={16 * 5} />
       )}
     </ContentLoader>
   );

@@ -1,4 +1,5 @@
 import "../styles/projects.css";
+import { motion } from "framer-motion";
 import BackArrow from "../components/backArrow/BackArrow";
 import Background from "../components/background/Background";
 import ArticleProject from "../components/projects/ArticleProject";
@@ -13,6 +14,7 @@ import MoreProjects from "../components/projects/MoreProjects";
 function Projects() {
   const DATA_PROJECTS = {
     projectOne: {
+      id: 1,
       name: "taxiBarber",
       image: taxiBarber,
       visitPage: "https://taxi-barber.netlify.app/",
@@ -27,6 +29,7 @@ function Projects() {
     },
 
     projectTwo: {
+      id: 2,
       name: "rick & morty",
       image: rickAndMorty,
       visitPage: "https://browser-rick-and-morty.netlify.app/",
@@ -41,6 +44,7 @@ function Projects() {
     },
 
     projectThree: {
+      id: 3,
       name: "generador de contraseñas",
       image: passwordGenerator,
       visitPage: "https://passwords-generator-gioliotta.netlify.app/",
@@ -55,6 +59,7 @@ function Projects() {
     },
 
     projectFour: {
+      id: 4,
       name: "portafolio",
       image: portafolio,
       visitPage: "https://portfolio-gioliotta.netlify.app/",
@@ -63,7 +68,7 @@ function Projects() {
         description:
           "Incluye información relevante sobre mí, selección de proyectos destacados y datos de contacto.",
         itemOne: "Realizado en un 80% con CSS.",
-        itemTwo: "Animaciones y efectos atractivos.",
+        itemTwo: "Uso de Framer Motion para animaciones atractivas.",
         itemThree:
           "Uso de librerías como router-dom, device-detect, react-icons.",
       },
@@ -72,67 +77,169 @@ function Projects() {
 
   const { projectOne, projectTwo, projectThree, projectFour } = DATA_PROJECTS;
 
+  const MOTION_STYLES = {
+    divStyles: {
+      backgroundColor: "transparent",
+      display: "flex",
+      justifyContent: "center",
+      aligItems: "center",
+    },
+
+    divOne: {
+      initial: {
+        x: "-600px",
+        opacity: 0,
+      },
+      transition: {
+        delay: 0,
+        duration: 2,
+      },
+      animate: {
+        opacity: 1,
+        x: "0px",
+      },
+    },
+
+    divTwo: {
+      initial: {
+        x: "600px",
+        opacity: 0,
+      },
+      transition: {
+        delay: 0.5,
+        duration: 2,
+      },
+      animate: {
+        opacity: 1,
+        x: "0px",
+      },
+    },
+
+    divThree: {
+      initial: {
+        x: "-600px",
+        opacity: 0,
+      },
+      transition: {
+        delay: 1,
+        duration: 2,
+      },
+      animate: {
+        opacity: 1,
+        x: "0px",
+      },
+    },
+
+    divFour: {
+      initial: {
+        x: "600px",
+        opacity: 0,
+      },
+      transition: {
+        delay: 1.5,
+        duration: 2,
+      },
+      animate: {
+        opacity: 1,
+        x: "0px",
+      },
+    },
+  };
+
+  const { divStyles, divOne, divTwo, divThree, divFour } = MOTION_STYLES;
+
   const PROJECTS = [
-    <ArticleProject
-      key="project1"
-      name={projectOne.name}
-      image={projectOne.image}
-      visitPage={projectOne.visitPage}
-      visitGitHub={projectOne.visitGitHub}
-      description={
-        <ProjectDescription
-          description={projectOne.description.description}
-          itemOne={projectOne.description.itemOne}
-          itemTwo={projectOne.description.itemTwo}
-          itemThree={projectOne.description.itemThree}
-        />
-      }
-    />,
-    <ArticleProject
-      key="project2"
-      name={projectTwo.name}
-      image={projectTwo.image}
-      visitPage={projectTwo.visitPage}
-      visitGitHub={projectTwo.visitGitHub}
-      description={
-        <ProjectDescription
-          description={projectTwo.description.description}
-          itemOne={projectTwo.description.itemOne}
-          itemTwo={projectTwo.description.itemTwo}
-          itemThree={projectTwo.description.itemThree}
-        />
-      }
-    />,
-    <ArticleProject
-      key="project3"
-      name={projectThree.name}
-      image={projectThree.image}
-      visitPage={projectThree.visitPage}
-      visitGitHub={projectThree.visitGitHub}
-      description={
-        <ProjectDescription
-          description={projectThree.description.description}
-          itemOne={projectThree.description.itemOne}
-          itemTwo={projectThree.description.itemTwo}
-          itemThree={projectThree.description.itemThree}
-        />
-      }
-    />,
-    <ArticleProject
-      key="project4"
-      name={projectFour.name}
-      image={projectFour.image}
-      visitPage={projectFour.visitPage}
-      visitGitHub={projectFour.visitGitHub}
-      description={
-        <ProjectDescription
-          description={projectFour.description.description}
-          itemOne={projectFour.description.itemOne}
-          itemTwo={projectFour.description.itemTwo}
-          itemThree={projectFour.description.itemThree}
-        />
-      }
-    />,
+    <motion.div
+      key={projectOne.id}
+      initial={divOne.initial}
+      transition={divOne.transition}
+      animate={divOne.animate}
+      style={divStyles}
+    >
+      <ArticleProject
+        name={projectOne.name}
+        image={projectOne.image}
+        visitPage={projectOne.visitPage}
+        visitGitHub={projectOne.visitGitHub}
+        description={
+          <ProjectDescription
+            description={projectOne.description.description}
+            itemOne={projectOne.description.itemOne}
+            itemTwo={projectOne.description.itemTwo}
+            itemThree={projectOne.description.itemThree}
+          />
+        }
+      />
+    </motion.div>,
+
+    <motion.div
+      key={projectTwo.id}
+      initial={divTwo.initial}
+      transition={divTwo.transition}
+      animate={divTwo.animate}
+      style={divStyles}
+    >
+      <ArticleProject
+        name={projectTwo.name}
+        image={projectTwo.image}
+        visitPage={projectTwo.visitPage}
+        visitGitHub={projectTwo.visitGitHub}
+        description={
+          <ProjectDescription
+            description={projectTwo.description.description}
+            itemOne={projectTwo.description.itemOne}
+            itemTwo={projectTwo.description.itemTwo}
+            itemThree={projectTwo.description.itemThree}
+          />
+        }
+      />
+    </motion.div>,
+
+    <motion.div
+      key={projectThree.id}
+      initial={divThree.initial}
+      transition={divThree.transition}
+      animate={divThree.animate}
+      style={divStyles}
+    >
+      <ArticleProject
+        name={projectThree.name}
+        image={projectThree.image}
+        visitPage={projectThree.visitPage}
+        visitGitHub={projectThree.visitGitHub}
+        description={
+          <ProjectDescription
+            description={projectThree.description.description}
+            itemOne={projectThree.description.itemOne}
+            itemTwo={projectThree.description.itemTwo}
+            itemThree={projectThree.description.itemThree}
+          />
+        }
+      />
+    </motion.div>,
+
+    <motion.div
+      key={projectFour.id}
+      initial={divFour.initial}
+      transition={divFour.transition}
+      animate={divFour.animate}
+      style={divStyles}
+    >
+      <ArticleProject
+        name={projectFour.name}
+        image={projectFour.image}
+        visitPage={projectFour.visitPage}
+        visitGitHub={projectFour.visitGitHub}
+        description={
+          <ProjectDescription
+            description={projectFour.description.description}
+            itemOne={projectFour.description.itemOne}
+            itemTwo={projectFour.description.itemTwo}
+            itemThree={projectFour.description.itemThree}
+          />
+        }
+      />
+    </motion.div>,
   ];
 
   return (
