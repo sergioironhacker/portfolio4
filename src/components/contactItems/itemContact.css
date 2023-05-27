@@ -4,7 +4,7 @@
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 1rem;
   transition-duration: .2s;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .contact__list-item:hover {

@@ -30,6 +30,7 @@
   font-size: 1.5rem;
   text-transform: capitalize;
   text-align: center;
+  font-family: "Raleway", sans-serif;
 }
 
 .project__img {
@@ -50,6 +51,8 @@
 
 .project__description-container {
   color: #FFf;
+  font-family: "Open sans", sans-serif;
+  letter-spacing: .5px;
 }
 
 /* .project__description-list {} */

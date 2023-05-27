@@ -99,13 +99,13 @@ function AboutMe() {
 
       {TEXT}
 
-      <motion.div
+      {/* <motion.div
         initial={button.initial}
         transition={button.transition}
         animate={button.animate}
       >
         <CVButton />
-      </motion.div>
+      </motion.div> */}
     </section>
   );
 }

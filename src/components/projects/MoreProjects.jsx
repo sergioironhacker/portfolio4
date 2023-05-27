@@ -1,10 +1,18 @@
 import { Link } from "react-router-dom";
 import { AiOutlineArrowUp as ArrowUp } from "react-icons/ai";
+import { animateScroll } from "react-scroll";
 
 function MoreProjects() {
   return (
     <div className="project__container-arrowup-btn">
-      <a href="#project">
+      <a
+        onClick={() => {
+          animateScroll.scrollToTop({
+            duration: 500,
+            smooth: true,
+          });
+        }}
+      >
         <ArrowUp className="project__arrowup" />
       </a>
 

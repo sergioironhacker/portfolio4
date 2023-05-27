@@ -258,18 +258,3 @@ function Projects() {
 }
 
 export default Projects;
-
-/*<ArticleProject
-          name="smartArt generator"
-          image={smartArtGenerator}
-          visitPage="https://smartart-generator.netlify.app/"
-          visitGitHub="https://github.com/gioliotta/smartart-generator"
-          description={
-            <ProjectDescription
-              description="Integré la API de OpenAI, y la utilicé para generar imágenes por medio de un prompt del usuario."
-              itemOne="Generar imágenes personalizadas."
-              itemTwo="Seleccionar el tamaño de la imagen."
-              itemThree="Botón para descargar la imagen generada."
-            />
-          }
-        />*/

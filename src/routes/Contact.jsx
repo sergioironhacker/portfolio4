@@ -136,20 +136,20 @@ function Contact() {
       />
     </motion.div>,
 
-    <motion.div
-      key="contact4"
-      initial={itemContactFour.initial}
-      transition={itemContactFour.transition}
-      animate={itemContactFour.animate}
-      style={stylesContainer}
-    >
-      <ContactItems
-        iconItem={cv}
-        textIcon="Ver CV"
-        href="/cv-giovanni-liotta.pdf"
-        iconClass="cv"
-      />
-    </motion.div>,
+    // <motion.div
+    //   key="contact4"
+    //   initial={itemContactFour.initial}
+    //   transition={itemContactFour.transition}
+    //   animate={itemContactFour.animate}
+    //   style={stylesContainer}
+    // >
+    //   <ContactItems
+    //     iconItem={cv}
+    //     textIcon="Ver CV"
+    //     href="/cv-giovanni-liotta.pdf"
+    //     iconClass="cv"
+    //   />
+    // </motion.div>,
   ];
 
   return (
