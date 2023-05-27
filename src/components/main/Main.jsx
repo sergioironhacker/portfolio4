@@ -3,11 +3,10 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 function Main() {
-  const [showAnimation, setShowAnimation] = useState(false);
+  const [showAnimation, setShowAnimation] = useState(true);
 
   addEventListener("load", () => {
-    setShowAnimation(true);
-    return setTimeout(() => setShowAnimation(false), 1000);
+    return setTimeout(() => setShowAnimation(false), 3000);
   });
 
   const MOTION_STYLES = {
