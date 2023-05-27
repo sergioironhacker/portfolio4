@@ -4,10 +4,10 @@ import BackArrow from "../components/backArrow/BackArrow";
 import Background from "../components/background/Background";
 import ArticleProject from "../components/projects/ArticleProject";
 import ProjectDescription from "../components/projects/ProjectDescription";
-// import smartArtGenerator from "../assets/img/smartArtGenerator.png";
 import taxiBarber from "../assets/img/taxiBarber.png";
 import rickAndMorty from "../assets/img/rick-morty.png";
 import passwordGenerator from "../assets/img/password-generator.png";
+import smartArtGenerator from "../assets/img/smartArtGenerator.png";
 import portafolio from "../assets/img/portafolio.png";
 import MoreProjects from "../components/projects/MoreProjects";
 
@@ -30,6 +30,22 @@ function Projects() {
 
     projectTwo: {
       id: 2,
+      name: "smartArt generator",
+      image: smartArtGenerator,
+      visitPage: "https://smartart-generator.netlify.app/",
+      visitGitHub:
+        "https://github.com/gioliotta/SmartArt-Readme/blob/main/README.md",
+      description: {
+        description:
+          "Integré la API de OpenAI, y la utilicé para generar imágenes por medio de un prompt del usuario.",
+        itemOne: "Generar imágenes personalizadas.",
+        itemTwo: "Seleccionar el tamaño de la imagen.",
+        itemThree: "Botón para visitar la imagen generada.",
+      },
+    },
+
+    projectThree: {
+      id: 3,
       name: "rick & morty",
       image: rickAndMorty,
       visitPage: "https://browser-rick-and-morty.netlify.app/",
@@ -43,8 +59,8 @@ function Projects() {
       },
     },
 
-    projectThree: {
-      id: 3,
+    projectFour: {
+      id: 4,
       name: "generador de contraseñas",
       image: passwordGenerator,
       visitPage: "https://passwords-generator-gioliotta.netlify.app/",
@@ -58,8 +74,8 @@ function Projects() {
       },
     },
 
-    projectFour: {
-      id: 4,
+    projectFive: {
+      id: 5,
       name: "portafolio",
       image: portafolio,
       visitPage: "https://portfolio-gioliotta.netlify.app/",
@@ -75,7 +91,8 @@ function Projects() {
     },
   };
 
-  const { projectOne, projectTwo, projectThree, projectFour } = DATA_PROJECTS;
+  const { projectOne, projectTwo, projectThree, projectFour, projectFive } =
+    DATA_PROJECTS;
 
   const MOTION_STYLES = {
     divStyles: {
@@ -144,9 +161,24 @@ function Projects() {
         x: "0px",
       },
     },
-  };
 
-  const { divStyles, divOne, divTwo, divThree, divFour } = MOTION_STYLES;
+    divFive: {
+      initial: {
+        x: "-600px",
+        opacity: 0,
+      },
+      transition: {
+        delay: 2,
+        duration: 2,
+      },
+      animate: {
+        opacity: 1,
+        x: "0px",
+      },
+    },
+  };
+  const { divStyles, divOne, divTwo, divThree, divFour, divFive } =
+    MOTION_STYLES;
 
   const PROJECTS = [
     <motion.div
@@ -240,13 +272,36 @@ function Projects() {
         }
       />
     </motion.div>,
+
+    <motion.div
+      key={projectFive.id}
+      initial={divFive.initial}
+      transition={divFive.transition}
+      animate={divFive.animate}
+      style={divStyles}
+    >
+      <ArticleProject
+        name={projectFive.name}
+        image={projectFive.image}
+        visitPage={projectFive.visitPage}
+        visitGitHub={projectFive.visitGitHub}
+        description={
+          <ProjectDescription
+            description={projectFive.description.description}
+            itemOne={projectFive.description.itemOne}
+            itemTwo={projectFive.description.itemTwo}
+            itemThree={projectFive.description.itemThree}
+          />
+        }
+      />
+    </motion.div>,
   ];
 
   return (
     <>
       <BackArrow />
 
-      <section className="project" id="project">
+      <section className="project">
         <Background />
 
         {PROJECTS}
