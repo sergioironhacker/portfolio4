@@ -6,7 +6,7 @@ function ContactItems({ iconClass, href, textIcon, iconItem }) {
   const LOADING = useImageLoader(iconItem);
 
   if (LOADING) {
-    return <LoadingAnimation isCircle={false} />;
+    return <LoadingAnimation isProject={false} />;
   } else {
     return (
       <ItemContact

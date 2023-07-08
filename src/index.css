@@ -3,12 +3,9 @@
   margin: 0;
 }
 
-/* html {
-  scroll-behavior: smooth;
-} */
-
 body {
   background-color: #000;
+  /* cursor: url("./assets/svg/cursor.svg"), auto; */
 }
 
 .nullroute {

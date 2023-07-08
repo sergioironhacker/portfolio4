@@ -98,16 +98,16 @@ function AboutMe() {
       {TITTLE}
 
       {TEXT}
-
-      {/* <motion.div
-        initial={button.initial}
-        transition={button.transition}
-        animate={button.animate}
-      >
-        <CVButton />
-      </motion.div> */}
     </section>
   );
 }
 
 export default AboutMe;
+
+/* <motion.div
+        initial={button.initial}
+        transition={button.transition}
+        animate={button.animate}
+      >
+        <CVButton />
+      </motion.div> */

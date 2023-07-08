@@ -9,12 +9,28 @@ import rickAndMorty from "../assets/img/rick-morty.png";
 import passwordGenerator from "../assets/img/password-generator.png";
 import smartArtGenerator from "../assets/img/smartArtGenerator.png";
 import portafolio from "../assets/img/portafolio.png";
+import cardsGenerator from "../assets/img/gioliotta.png";
 import MoreProjects from "../components/projects/MoreProjects";
+import clipboard from "../assets/img/clipboardImg.png";
 
 function Projects() {
   const DATA_PROJECTS = {
     projectOne: {
       id: 1,
+      name: "clipboard notes",
+      image: clipboard,
+      visitPage: "https://clipboard-notes.netlify.app/",
+      visitGitHub: "https://github.com/gioliotta/clipboard-extension",
+      description: {
+        description:
+          "Convertí una app de notas en extensión configurando el manifest.json, disponible para navegadores como Chrome y Edge.",
+        itemOne: "Papelera de reciclaje para recuperar notas eliminadas.",
+        itemTwo: "Opciones para editar, borrar y copiar.",
+        itemThree: "Versión disponible en inglés y español.",
+      },
+    },
+    projectTwo: {
+      id: 2,
       name: "taxiBarber",
       image: taxiBarber,
       visitPage: "https://taxi-barber.netlify.app/",
@@ -28,8 +44,8 @@ function Projects() {
       },
     },
 
-    projectTwo: {
-      id: 2,
+    projectThree: {
+      id: 3,
       name: "smartArt generator",
       image: smartArtGenerator,
       visitPage: "https://smartart-generator.netlify.app/",
@@ -44,8 +60,8 @@ function Projects() {
       },
     },
 
-    projectThree: {
-      id: 3,
+    projectFour: {
+      id: 4,
       name: "rick & morty",
       image: rickAndMorty,
       visitPage: "https://browser-rick-and-morty.netlify.app/",
@@ -59,8 +75,8 @@ function Projects() {
       },
     },
 
-    projectFour: {
-      id: 4,
+    projectFive: {
+      id: 5,
       name: "generador de contraseñas",
       image: passwordGenerator,
       visitPage: "https://passwords-generator-gioliotta.netlify.app/",
@@ -74,8 +90,23 @@ function Projects() {
       },
     },
 
-    projectFive: {
-      id: 5,
+    projectSix: {
+      id: 6,
+      name: "Generador de cards",
+      image: cardsGenerator,
+      visitPage: "https://card-generator-ts.netlify.app/",
+      visitGitHub: "https://github.com/gioliotta/card-generator",
+      description: {
+        description:
+          "Integré React y TypeScript, trabajé con tipado estático, lo que brindó beneficios en términos de detección de errores.",
+        itemOne: "Los datos ingresados se modifican en tiempo real.",
+        itemTwo: "Botón para descargar la card generada.",
+        itemThree: "Uso de styled-components para los estilos.",
+      },
+    },
+
+    projectSeven: {
+      id: 7,
       name: "portafolio",
       image: portafolio,
       visitPage: "https://portfolio-gioliotta.netlify.app/",
@@ -91,8 +122,15 @@ function Projects() {
     },
   };
 
-  const { projectOne, projectTwo, projectThree, projectFour, projectFive } =
-    DATA_PROJECTS;
+  const {
+    projectOne,
+    projectTwo,
+    projectThree,
+    projectFour,
+    projectFive,
+    projectSix,
+    projectSeven,
+  } = DATA_PROJECTS;
 
   const MOTION_STYLES = {
     divStyles: {
@@ -176,9 +214,48 @@ function Projects() {
         x: "0px",
       },
     },
+
+    divSix: {
+      initial: {
+        x: "600px",
+        opacity: 0,
+      },
+      transition: {
+        delay: 2.5,
+        duration: 2,
+      },
+      animate: {
+        opacity: 1,
+        x: "0px",
+      },
+    },
+
+    divSeven: {
+      initial: {
+        x: "-600px",
+        opacity: 0,
+      },
+      transition: {
+        delay: 3,
+        duration: 2,
+      },
+      animate: {
+        opacity: 1,
+        x: "0px",
+      },
+    },
   };
-  const { divStyles, divOne, divTwo, divThree, divFour, divFive } =
-    MOTION_STYLES;
+
+  const {
+    divStyles,
+    divOne,
+    divTwo,
+    divThree,
+    divFour,
+    divFive,
+    divSix,
+    divSeven,
+  } = MOTION_STYLES;
 
   const PROJECTS = [
     <motion.div
@@ -291,6 +368,51 @@ function Projects() {
             itemOne={projectFive.description.itemOne}
             itemTwo={projectFive.description.itemTwo}
             itemThree={projectFive.description.itemThree}
+          />
+        }
+      />
+    </motion.div>,
+
+    <motion.div
+      key={projectSix.id}
+      initial={divSix.initial}
+      transition={divSix.transition}
+      animate={divSix.animate}
+      style={divStyles}
+    >
+      <ArticleProject
+        name={projectSix.name}
+        image={projectSix.image}
+        visitPage={projectSix.visitPage}
+        visitGitHub={projectSix.visitGitHub}
+        description={
+          <ProjectDescription
+            description={projectSix.description.description}
+            itemOne={projectSix.description.itemOne}
+            itemTwo={projectSix.description.itemTwo}
+            itemThree={projectSix.description.itemThree}
+          />
+        }
+      />
+    </motion.div>,
+    <motion.div
+      key={projectSeven.id}
+      initial={divSeven.initial}
+      transition={divSeven.transition}
+      animate={divSeven.animate}
+      style={divStyles}
+    >
+      <ArticleProject
+        name={projectSeven.name}
+        image={projectSeven.image}
+        visitPage={projectSeven.visitPage}
+        visitGitHub={projectSeven.visitGitHub}
+        description={
+          <ProjectDescription
+            description={projectSeven.description.description}
+            itemOne={projectSeven.description.itemOne}
+            itemTwo={projectSeven.description.itemTwo}
+            itemThree={projectSeven.description.itemThree}
           />
         }
       />

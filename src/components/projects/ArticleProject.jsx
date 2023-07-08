@@ -13,7 +13,7 @@ function ArticleProject({ name, image, visitGitHub, visitPage, description }) {
         <h3 className="project__subtitle">{name}</h3>
 
         {LOADING ? (
-          <LoadingAnimation isCircle />
+          <LoadingAnimation isProject />
         ) : (
           <img className="project__img" src={image} alt={name} />
         )}
