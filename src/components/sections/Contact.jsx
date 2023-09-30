@@ -39,7 +39,7 @@ function Contact() {
         <ul className="contact__list">
           {items.map(item => (
             <li key={item.id} className="contact__list-item">
-              <a to={item.href} className="contact__link">
+              <a href={item.href} target="_blank" className="contact__link">
                 <p className="contact__text-icon">{item.text}</p>
                 <img src={item.icon} className="contact__icon" />
               </a>
