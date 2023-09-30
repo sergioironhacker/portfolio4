@@ -1,32 +1,27 @@
 .contact {
   background-color: rgba(23, 195, 178, 0.2);
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .contact__title {
     text-align: center;
-    margin: 5rem 0;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
     color: #1df2dc;  
     font-family: 'Orbitron', sans-serif;
     text-transform: capitalize;
     letter-spacing: 2px;
     padding: .5rem;
 }
-
-/* .contact__nav {} */
-  
 .contact__list {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 } 
-
-
-@media only screen and (max-width: 480px) {
+@media (max-width: 480px) {
   .contact__title {
     font-size: 2rem;
   }
@@ -35,8 +30,7 @@
     row-gap: 2rem;
   }
 }
-
-@media only screen and (min-width: 481px) and (max-width: 1024px) {
+@media (min-width: 481px) and (max-width: 1024px) {
   .contact__title {
     font-size: 2.2rem;
   }
@@ -45,8 +39,7 @@
     row-gap: 2.2rem;
   }
 }
-
-@media only screen and (min-width: 1025px) {
+@media (min-width: 1025px) {
   .contact__title {
     font-size: 2.4rem;
   }
@@ -55,11 +48,75 @@
     row-gap: 2.4rem;
   }
 }
-
-@media only screen and (max-width: 1024px) and (orientation: landscape) {
+@media (max-width: 1024px) and (orientation: landscape) {
   .contact {
     padding-bottom: 1rem;
   }
 }
+.contact__list-item {
+  list-style: none;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 1rem;
+  transition-duration: .2s;
+  font-family: "Open Sans", sans-serif;
+}
+.contact__list-item:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, .8);
+}
+.contact__link {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact__icon {
+  width: 3rem;
+  border-radius: .5rem;
+}
+.linkedin { border: 1px solid #fff; }
+.contact__text-icon { color: aqua; } 
+@media (max-width: 480px) {
+  .contact__icon {
+    font-size: 3rem;
+  }
 
+  .contact__list-item {
+     width: 100%;
+  } 
+
+  .contact__text-icon {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 1024px) {
+
+  .contact__icon {
+    font-size: 3.2rem;
+  }
+
+  .contact__list-item {
+     width: 110%;
+  }
+
+  .contact__text-icon {
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 1025px) {
+  .contact__icon {
+    font-size: 3.4rem;
+  }
+
+  .contact__list-item {
+     width: 120%;
+  }
+
+  .contact__text-icon {
+    font-size: 1.2rem;
+  }
+}
 

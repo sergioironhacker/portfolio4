@@ -1,23 +1,11 @@
 * {
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: #000;
-  /* cursor: url("./assets/svg/cursor.svg"), auto; */
-}
-
-.nullroute {
-  background-color: #fff;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-align: center;
 }
 
 

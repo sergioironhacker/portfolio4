@@ -6,3 +6,243 @@
     height: 100vh;
     justify-content:space-between;
 }
+
+/*? HEADER */
+.header {
+    backdrop-filter: blur(3px);
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+    width: 100vw;
+}
+.header__nav {
+  margin: 0;
+  width: 100%;
+}
+.header__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.header__list-item {
+  list-style: none;
+  width: max-content;
+  padding-top: 1em;
+}
+.header__link {
+  text-decoration: none;
+  border: 2px solid #17C3B2;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  border-top: none;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  transition: .5s;
+  z-index: 9;
+  font-family: 'Orbitron', sans-serif;
+  color: #17C3B2;
+  font-weight: bold;
+  letter-spacing: .5px;
+
+}
+.header__link:hover {
+  cursor: pointer;
+  background-color: rgb(23, 195, 178);
+  color: #000;
+}
+@media  (max-width: 480px) {
+  .header__list {
+    gap: .3em;
+  }
+  
+  .header__link {
+    padding: 1em ;
+    font-size: .7em;
+  }
+}
+@media (min-width: 481px) and (max-width: 1024px) {
+  .header__list {
+    gap: 1.5em;
+  }
+  
+  .header__link {
+    padding: 1.3em ;
+    font-size: 1em;
+  }
+}
+@media  (min-width: 1025px) {
+  .header__list {
+    gap: 2em;
+  }
+  
+  .header__link {
+    padding: 1.3em ;
+    font-size: 1.1em;
+  }
+}
+@media (max-width: 1024px) and (orientation: landscape) {
+  .header__list {
+    gap: 1em;
+  }
+
+  .header__link {
+    padding: 1em ;
+    font-size: .8em;
+  }
+}
+
+/*? SECTION */
+.section__home {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8em;
+}
+#home__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2em;
+  padding: 1em;
+  transition: all 0.5s ease;
+}
+.home__title {
+  text-shadow: 0 0em 2rem #1df2dc;
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 3px;
+  color: #1df2dc;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2.5em;
+}
+@media (max-width: 480px) {
+  .section__home {
+    width: 100%;
+    margin-bottom: 8em;
+  }
+
+  #home__container {
+    height: 15em;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .home__title {
+    font-size: 1.4em;
+  }
+}
+@media (min-width: 481px) and (max-width: 1024px) {
+  .section__home {
+    height: 17em;
+    margin-bottom: 8.1em; 
+  }
+
+  #home__container {
+    width: 100%;
+    padding: 3em;
+  }
+
+  .home__title {
+    font-size: 2.2em;
+  }
+}
+@media (min-width: 1025px) {
+  .section__home {
+    height: 15.2em;
+    margin-bottom: 8.2em;  
+  }
+
+  #home__container {
+    padding: 3.1em;
+  }
+
+  .home__title {
+    font-size: 2.4em;
+  }
+}
+@media (max-width: 1024px) and (orientation: landscape) {
+  .section__home {
+    width: 100%;
+    margin-bottom: 3em;
+  }
+
+  #home__container {
+    height: 10em;
+    border-radius: 0;
+    background-color: transparent;
+  }
+
+  .home__title {
+    font-size: 1.8em;
+  }
+}
+
+/*? FOOTER */
+.footer {
+    background-color: rgba(23, 195, 178, .2);
+    backdrop-filter: blur(2px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    bottom: 0;
+    
+}
+.footer__status {
+    font-family: 'Orbitron', sans-serif;
+    color: #1df2dc; 
+    letter-spacing: 1px;  
+}
+.footer__active {
+  color: #4acb4a;
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 1px;
+  font-size: 1.4em;
+}
+@media (max-width: 480px) {
+  .footer {
+    height: 2.5em;
+  }
+
+  .footer__status,
+  .footer__active {
+    font-size: 1em;
+  }
+}
+@media (min-width: 481px) and (max-width: 1024px) {
+  .footer {
+    height: 2.6em;
+  }
+
+  .footer__status,
+  .footer__active {
+    font-size: 1.4em;
+  }
+}
+@media (min-width: 1025px) {
+  .footer {
+    height: 2.7em;
+  }
+
+  .footer__status,
+  .footer__active {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 1024px) and (orientation: landscape) {
+  .footer__status {
+    font-size: 1.1em;
+  }
+}
+  

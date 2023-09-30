@@ -1,67 +1,72 @@
 .aboutme {
     background-color: rgba(23, 195, 178, .2);
-    min-height: 100vh;
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     overflow-x: hidden;
+    row-gap: 3.5em;
 }
 
 .aboutme__tittle {
     text-align: center;
     width: 100%;
-    margin: 4rem 0;
     color: #1df2dc;  
     font-family: 'Orbitron', sans-serif;
     letter-spacing: 2px;
     text-transform: capitalize;
- 
 }
 
 .aboutme__text {
     color: #fff;
-    text-align:justify;
+    text-align:center;
     letter-spacing: 1px;
-    padding: 0 1rem 1rem 1rem;
+    padding: 0 1em 1em 1em;
     font-family: 'Raleway', sans-serif;
 }
 
-@media only screen and (max-width: 480px) {
+@media (max-width: 480px) {
     .aboutme__tittle {
-        font-size: 2rem;
+        font-size: 2em;
     }
 
     .aboutme__text {
-      font-size: 1rem;
+      font-size: 1em;
       width: 90%;
-      text-align:center;
     }
 }
 
-@media only screen and (min-width: 481px) and (max-width: 1024px) {
+@media (min-width: 481px) and (max-width: 1024px) {
     .aboutme__tittle {
-      font-size: 2.2rem;
+      font-size: 2.2em;
     }
 
     .aboutme__text {
-      font-size: 1.2rem;
+      font-size: 1.2em;
       max-width: 500px;
     }
 }
 
-@media only screen and (min-width: 1025px) {
+@media (min-width: 1025px) {
     .aboutme__tittle {
-      font-size: 2.4rem;
+      font-size: 2.4em;
     }
 
     .aboutme__text {
-      font-size: 1.4rem;
+      font-size: 1.4em;
       max-width: 600px;
     }
 }
 
-@media only screen and (max-width: 1024px) and (orientation: landscape) {
+@media (max-width: 1024px) and (orientation: landscape) {
   .aboutme__text {
-    padding-bottom: 1rem;
+    padding-bottom: 1em;
   }
+}
+
+.technologies__span {
+  color: #1df2dc;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
 }
