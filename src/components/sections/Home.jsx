@@ -1,4 +1,5 @@
 import "../../styles/home.css";
+import { BsChevronDoubleDown as ArrowBack } from "react-icons/bs";
 
 function Home() {
   return (
@@ -32,6 +33,10 @@ function Home() {
           <h1 className="home__title">Giovanni Liotta</h1>
           <h2 className="home__title">Web Developer</h2>
         </article>
+
+        <a href="#projects">
+          <ArrowBack className="home__arrow" />
+        </a>
       </section>
 
       <footer className="footer">
