@@ -1,4 +1,4 @@
-import Background from "./components/background/Background";
+import Background from "./components/Background";
 import Home from "./components/sections/Home";
 import Projects from "./components/sections/Projects";
 import AboutMe from "./components/sections/AboutMe";

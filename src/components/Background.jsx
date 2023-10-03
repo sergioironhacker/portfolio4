@@ -1,4 +1,4 @@
-import "../background/background.css";
+import "../styles/background.css";
 
 function Background() {
   return (
