@@ -7,29 +7,27 @@ function AboutMe() {
 
       <div>
         <p className="aboutme__text">
-          Inicié mi aprendizaje de forma autodidacta utilizando plataformas como
-          Udemy, CoderHouse, entre otras.
+          Me encuentro trabajando como desarrollador freelance, en equipo con
+          programadores y diseñadores, tanto en aplicaciones web y móviles.
           <br />
           <br />
-          He estado mejorando mis habilidades durante más de un año, centrándome
-          en el desarrollo front-end. Trabajo con tecnologías como{" "}
-          <span className="technologies__span"> HTML</span>,
-          <span className="technologies__span"> CSS</span>,
-          <span className="technologies__span"> Bootstrap</span>,
-          <span className="technologies__span"> Tailwind</span>,
+          Trabajo con tecnologías como:
+          <br />
+          <span className="technologies__span"> React Js</span>,
+          <span className="technologies__span"> React Native</span>,
+          <span className="technologies__span"> Node Js</span>,
+          <span className="technologies__span"> GIT</span>,
           <span className="technologies__span"> JavaScript</span>,
-          <span className="technologies__span"> React Js</span> y
-          <span className="technologies__span"> GIT</span>
-          <br />
-          <br />
-          Mi enfoque es crear sitios web responsive con experiencias de usuario
-          atractivas y funcionales. Utilizo programas de diseño como Figma para
-          asegurarme de que los sitios sean intuitivos para los usuarios.
+          <span className="technologies__span"> Tailwind</span>,
+          <span className="technologies__span"> CSS</span> y
+          <span className="technologies__span"> HTML</span>.
           <br />
           <br />
           Estoy interesado en aportar valor a la empresa y contribuir al
-          crecimiento del equipo. Tengo 20 años de edad y vivo en Mendoza,
-          Argentina.
+          crecimiento del equipo.
+          <br />
+          <br />
+          Si tienes alguna consulta, no dudes en contactarme.
         </p>
       </div>
     </section>
