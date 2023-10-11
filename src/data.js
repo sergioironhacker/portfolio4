@@ -59,7 +59,6 @@ const PROJECTS_ITEMS = [
     visitPage: "https://smartart-generator.netlify.app/",
     description: {
       description:
-      // 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
         "Integré la API de OpenAI, y la utilicé para generar imágenes por medio de un prompt del usuario.",
       itemOne: "Generar imágenes personalizadas.",
       itemTwo: "Seleccionar el tamaño de la imagen.",
