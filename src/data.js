@@ -59,6 +59,7 @@ const PROJECTS_ITEMS = [
     visitPage: "https://smartart-generator.netlify.app/",
     description: {
       description:
+      // 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
         "Integré la API de OpenAI, y la utilicé para generar imágenes por medio de un prompt del usuario.",
       itemOne: "Generar imágenes personalizadas.",
       itemTwo: "Seleccionar el tamaño de la imagen.",
@@ -81,20 +82,20 @@ const PROJECTS_ITEMS = [
     },
   },
 
-  {
-    id: 6,
-    name: "Generador de cards",
-    image: cardsGenerator,
-    visitPage: "https://card-generator-ts.netlify.app/",
-    visitGitHub: "https://github.com/gioliotta/card-generator",
-    description: {
-      description:
-        "Integré React y TypeScript, trabajé con tipado estático, lo que brindó beneficios en términos de detección de errores.",
-      itemOne: "Los datos ingresados se modifican en tiempo real.",
-      itemTwo: "Botón para descargar la card generada.",
-      itemThree: "Uso de styled-components para los estilos.",
-    },
-  },
+  // {
+  //   id: 6,
+  //   name: "Generador de cards",
+  //   image: cardsGenerator,
+  //   visitPage: "https://card-generator-ts.netlify.app/",
+  //   visitGitHub: "https://github.com/gioliotta/card-generator",
+  //   description: {
+  //     description:
+  //       "Integré React y TypeScript, trabajé con tipado estático, lo que brindó beneficios en términos de detección de errores.",
+  //     itemOne: "Los datos ingresados se modifican en tiempo real.",
+  //     itemTwo: "Botón para descargar la card generada.",
+  //     itemThree: "Uso de styled-components para los estilos.",
+  //   },
+  // },
 ];
 
 const CONTACT_ITEMS = [
