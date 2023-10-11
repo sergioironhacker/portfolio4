@@ -14,7 +14,7 @@ const PROJECTS_ITEMS = [
     id: 1,
     name: "algorithmic market",
     image: algorithmic,
-    visitPage: "https://clipboard-notes.netlify.app/",
+    visitPage: "https://algorithmic-market.netlify.app/",
     description: {
       description:
         "Aplicación web desarrollada en equipo, en la cual se venden cursos de trading para ser consumidos dentro de la misma.",
