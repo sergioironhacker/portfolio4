@@ -27,7 +27,8 @@ function Projects() {
                   >
                     <GithubIcon
                       title="Visitar Repositorio"
-                      className="project__boxArrowUp-icon"
+                      className="project__boxArrowUp-icon pollo"
+                      style={{ fontSize: "2.5em" }}
                     />
                   </a>
                 )}
@@ -40,6 +41,7 @@ function Projects() {
                   <VisitIcon
                     title="Visitar Proyecto"
                     className="project__boxArrowUp-icon"
+                    style={{ fontSize: "2.2em" }}
                   />
                 </a>
               </div>

@@ -3,7 +3,6 @@ import passwordGenerator from "./assets/img/password.webp";
 import clipboard from "./assets/img/clipboard.webp";
 import taxiBarber from "./assets/img/taxi.webp";
 import smartArtGenerator from "./assets/img/smart.webp";
-import cardsGenerator from "./assets/img/card.webp";
 import github from "./assets/svgs/github.svg";
 import mail from "./assets/svgs/mail.svg";
 import linkedin from "./assets/svgs/linkedin.svg";
@@ -45,7 +44,7 @@ const PROJECTS_ITEMS = [
     visitGitHub: "https://github.com/gioliotta/TaxiBarber",
     description: {
       description:
-        "Implementé la actualización de inputs utilizando estados y guardé la información en  el localStorage.",
+        "Implementé la actualización de inputs utilizando estados y guardé la información en  el local storage.",
       itemOne: "Gestión el precio de un corte de pelo.",
       itemTwo: "Panel de configuración para modificar los parámetros.",
       itemThree: "Opción para cambiar contraseña.",

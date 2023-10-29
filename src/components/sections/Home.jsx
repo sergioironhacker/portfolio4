@@ -1,5 +1,5 @@
 import "../../styles/home.css";
-import { BsChevronDoubleDown as ArrowBack } from "react-icons/bs";
+import { BsChevronDoubleDown as ArrowDown } from "react-icons/bs";
 
 function Home() {
   return (
@@ -26,18 +26,21 @@ function Home() {
         </nav>
       </header>
 
-      <p id="Estoy para que no se rompa el estilo"></p>
+      <p className="Estoy para que no se rompa el estilo"></p>
 
-      <section className="section__home">
+      <main className="section__home">
         <article id="home__container">
-          <h1 className="home__title">Giovanni Liotta</h1>
-          <h2 className="home__title">Web Developer</h2>
+          <h1 className="home__title">
+            Desarrollador
+            <br />
+            Web y Móvil
+          </h1>
         </article>
 
         <a href="#projects">
-          <ArrowBack className="home__arrow" />
+          <ArrowDown className="home__arrow" />
         </a>
-      </section>
+      </main>
 
       <footer className="footer">
         <p className="footer__status">Estado&nbsp;</p>

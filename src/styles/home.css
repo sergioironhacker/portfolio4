@@ -114,7 +114,7 @@
   justify-content: center;
   align-items: center;
   row-gap: 2em;
-  padding: 1em;
+  padding-top: 4em;
   transition: all 0.5s ease;
 }
 .home__title {
@@ -125,6 +125,10 @@
   font-weight: bold;
   text-align: center;
   font-size: 2.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
 }
 .home__arrow {
   color: #1df2dc;
@@ -140,7 +144,7 @@
   }
 
   #home__container {
-    height: 15em;
+    height: 17em;
     width: 100%;
     border-radius: 0;
   }
@@ -169,7 +173,7 @@
     height: 15.2em;
   }
   .home__title {
-    font-size: 2.4em;
+    font-size: 3em;
   }
 }
 @media (max-width: 1024px) and (orientation: landscape) {
@@ -197,7 +201,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  bottom: 0;
+  padding: 1em 0 3em 0;
 }
 .footer__status {
   font-family: "Orbitron", sans-serif;

@@ -44,7 +44,7 @@
   justify-content: center;
   align-items: center;
   column-gap: 1rem;
-  margin: 1rem 0;
+  margin: 1.2em 0;
 }
 
 .project__subtitle {
@@ -76,47 +76,24 @@
   color: #fff;
   font-family: "Open sans", sans-serif;
   letter-spacing: 0.5px;
+  text-align: center;
 }
 
 .project__description-list-item {
   list-style: none;
-  text-align: start;
+  text-align: center;
   display: flex;
   flex-direction: row;
+  text-align: start;
+  justify-content: flex-start;
   align-items: center;
   column-gap: 1rem;
 }
 
-.project__github-icon {
-  right: 55px;
-  color: #000000;
-  font-size: 2.5rem;
-  background-color: #aeaeae;
-  border-radius: 100%;
-  transition-duration: 0.2s;
-}
-
-.project__github-icon:hover {
-  cursor: pointer;
-  color: #aeaeae;
-  background-color: #000;
-}
-
 .project__boxArrowUp-icon {
-  color: #000000;
-  background-color: rgba(55, 165, 255, 0.8);
-  font-size: 2rem;
-  border-radius: 5px;
-  padding: 0.2rem;
-  transition-duration: 0.2s;
-}
-
-.project__boxArrowUp-icon:hover {
+  color: #1df2dc;
   cursor: pointer;
-  color: rgba(55, 165, 255, 0.8);
-  background-color: #000;
 }
-
 .project__contentloader {
   animation: blink 1.5s infinite;
 }
@@ -243,7 +220,7 @@
 @media (min-width: 481px) {
   .project {
     padding: 2em 0;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
   }
 
   .project__article {
