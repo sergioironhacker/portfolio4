@@ -3,12 +3,27 @@ import passwordGenerator from "./assets/img/password.webp";
 import clipboard from "./assets/img/clipboard.webp";
 import taxiBarber from "./assets/img/taxi.webp";
 import smartArtGenerator from "./assets/img/smart.webp";
+import pomolym from "./assets/img/pomolym.webp";
 import github from "./assets/svgs/github.svg";
 import mail from "./assets/svgs/mail.svg";
 import linkedin from "./assets/svgs/linkedin.svg";
 import whatsapp from "./assets/svgs/whatsapp.svg";
 
 const PROJECTS_ITEMS = [
+  {
+    id: 0,
+    name: "pomoLym",
+    image: pomolym,
+    visitPage: "https://pomolym.netlify.app/",
+    visitGitHub: "https://github.com/gioliotta/pomolym-app",
+    description: {
+      description:
+        "Aplicación desarrollada en React Native para Android de tipo pomodoro que se centra en mantener un diseño simple e intuitivo.",
+      itemOne: "Guardado de datos en la aplicación.",
+      itemTwo: "Notificaciones push.",
+      itemThree: "Pestaña para personalizar los ciclos de trabajo.",
+    },
+  },
   {
     id: 1,
     name: "algorithmic market",
