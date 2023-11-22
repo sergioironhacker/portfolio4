@@ -11,6 +11,8 @@ import tailwindImg from "../../assets/svgs/tailwind.svg";
 import styledImg from "../../assets/svgs/styled.svg";
 import jsImg from "../../assets/svgs/js.svg";
 import gitImg from "../../assets/svgs/git.svg";
+import viteImg from "../../assets/svgs/vite.svg";
+import expoImg from "../../assets/svgs/expo.svg";
 
 function Home() {
   return (
@@ -58,12 +60,14 @@ function Home() {
           <img src={reactImg} title="React.js" alt="react image" />
           <img src={nextImg} title="Next.js" alt="next image" />
           <img src={nodeImg} title="Node.js" alt="node image" />
-          <img src={firebaseImg} title="Firebase" alt="firebase image" />
           <img src={mongoImg} title="MongoDB" alt="mongodb image" />
+          <img src={firebaseImg} title="Firebase" alt="firebase image" />
           <img src={gitImg} title="GIT" alt="git image" />
+          <img src={expoImg} title="Expo" alt="expo image" />
+          <img src={viteImg} title="Vite" alt="vite image" />
           <img src={styledImg} title="styled-components" alt="styled image" />
           <img src={tailwindImg} title="Tailwind" alt="tailwind image" />
-          <img src={jsImg} title="JavaScript" alt="js image" />
+          <img src={jsImg} title="JavaScript" alt="javascript image" />
           <img src={cssImg} title="CSS" alt="css image" />
           <img src={htmlImg} title="HTML" alt="html image" />
         </div>

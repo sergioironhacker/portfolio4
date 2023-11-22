@@ -13,12 +13,14 @@ function AboutMe() {
           <br />
           Trabajo con tecnologías como:
           <br />
-          <span className="technologies__span"> Next.js</span>,
-          <span className="technologies__span">React.js</span>,
+          <span className="technologies__span"> React.js</span>,
           <span className="technologies__span"> React Native</span>,
+          <span className="technologies__span"> Expo</span>,
+          <span className="technologies__span"> Next.js</span>,
           <span className="technologies__span"> Node.js</span>,
           <span className="technologies__span"> Express.js</span>,
           <span className="technologies__span"> GIT</span>,
+          <span className="technologies__span"> Vite</span>,
           <span className="technologies__span"> Firebase</span>,
           <span className="technologies__span"> MongoDB</span>,
           <span className="technologies__span"> JavaScript</span>,
