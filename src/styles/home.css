@@ -147,7 +147,9 @@
 @media (max-width: 480px) {
   .section__home {
     width: 100%;
-    margin-top: 7em;
+    height: 70vh;
+    justify-content: center;
+    margin-top: 8em;
   }
   .home__title {
     letter-spacing: 2px;
