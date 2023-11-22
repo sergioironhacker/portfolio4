@@ -1,5 +1,16 @@
 import "../../styles/home.css";
 import { BsChevronDoubleDown as ArrowDown } from "react-icons/bs";
+import reactImg from "../../assets/svgs/react.svg";
+import nextImg from "../../assets/svgs/next.svg";
+import nodeImg from "../../assets/svgs/node.svg";
+import firebaseImg from "../../assets/svgs/firebase.svg";
+import mongoImg from "../../assets/svgs/mongo.svg";
+import cssImg from "../../assets/svgs/css.svg";
+import htmlImg from "../../assets/svgs/html.svg";
+import tailwindImg from "../../assets/svgs/tailwind.svg";
+import styledImg from "../../assets/svgs/styled.svg";
+import jsImg from "../../assets/svgs/js.svg";
+import gitImg from "../../assets/svgs/git.svg";
 
 function Home() {
   return (
@@ -43,6 +54,19 @@ function Home() {
           </p>
         </div>
 
+        <div className="container-technologies">
+          <img src={reactImg} title="React.js" alt="react image" />
+          <img src={nextImg} title="Next.js" alt="next image" />
+          <img src={nodeImg} title="Node.js" alt="node image" />
+          <img src={firebaseImg} title="Firebase" alt="firebase image" />
+          <img src={mongoImg} title="MongoDB" alt="mongodb image" />
+          <img src={gitImg} title="GIT" alt="git image" />
+          <img src={styledImg} title="styled-components" alt="styled image" />
+          <img src={tailwindImg} title="Tailwind" alt="tailwind image" />
+          <img src={jsImg} title="JavaScript" alt="js image" />
+          <img src={cssImg} title="CSS" alt="css image" />
+          <img src={htmlImg} title="HTML" alt="html image" />
+        </div>
         <a href="#projects">
           <ArrowDown className="home__arrow" />
         </a>

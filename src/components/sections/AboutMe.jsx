@@ -13,11 +13,16 @@ function AboutMe() {
           <br />
           Trabajo con tecnologías como:
           <br />
-          <span className="technologies__span"> React Js</span>,
+          <span className="technologies__span"> Next.js</span>,
+          <span className="technologies__span">React.js</span>,
           <span className="technologies__span"> React Native</span>,
-          <span className="technologies__span"> Node Js</span>,
+          <span className="technologies__span"> Node.js</span>,
+          <span className="technologies__span"> Express.js</span>,
           <span className="technologies__span"> GIT</span>,
+          <span className="technologies__span"> Firebase</span>,
+          <span className="technologies__span"> MongoDB</span>,
           <span className="technologies__span"> JavaScript</span>,
+          <span className="technologies__span"> styled-componentes</span>,
           <span className="technologies__span"> Tailwind</span>,
           <span className="technologies__span"> CSS</span> y
           <span className="technologies__span"> HTML</span>.
