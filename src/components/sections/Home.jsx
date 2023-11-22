@@ -26,16 +26,22 @@ function Home() {
         </nav>
       </header>
 
-      <p className="Estoy para que no se rompa el estilo"></p>
+      <p className="Estoy para que no se rompa el estilo" />
 
       <main className="section__home">
-        <article id="home__container">
-          <h1 className="home__title">
+        <div className="home__title">
+          <p style={{ textAlign: "start", width: "100%", marginRight: "2em" }}>
             Desarrollador
-            <br />
-            Web y Móvil
+          </p>
+          <br />
+          <h1>
+            Web <code>&</code> Móvil
           </h1>
-        </article>
+          <br />
+          <p style={{ textAlign: "end", width: "100%", marginRight: "-2em" }}>
+            Giovanni Liotta
+          </p>
+        </div>
 
         <a href="#projects">
           <ArrowDown className="home__arrow" />

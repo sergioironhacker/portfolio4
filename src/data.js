@@ -1,17 +1,44 @@
 import algorithmic from "./assets/img/algorithmic.webp";
 import passwordGenerator from "./assets/img/password.webp";
 import clipboard from "./assets/img/clipboard.webp";
-import taxiBarber from "./assets/img/taxi.webp";
 import smartArtGenerator from "./assets/img/smart.webp";
 import pomolym from "./assets/img/pomolym.webp";
 import github from "./assets/svgs/github.svg";
 import mail from "./assets/svgs/mail.svg";
 import linkedin from "./assets/svgs/linkedin.svg";
 import whatsapp from "./assets/svgs/whatsapp.svg";
+import lymwrite from "./assets/img/lymwrite.webp";
 
 const PROJECTS_ITEMS = [
   {
     id: 0,
+    name: "algorithmic market",
+    image: algorithmic,
+    visitPage: "https://algorithmic-market.com/",
+    description: {
+      description:
+        "Aplicación web desarrollada en equipo, en la cual se venden cursos de trading para ser consumidos dentro de la misma.",
+      itemOne: "Alojamiento de videos en bunny.",
+      itemTwo: "Login para usuarios utilizando Auth0.",
+      itemThree: "Compras integradas con Stripe.",
+    },
+  },
+  {
+    id: 1,
+    name: "lymWrite",
+    image: lymwrite,
+    visitPage: "https://lym-write.netlify.app/",
+    visitGitHub: "https://github.com/gioliotta/lymwrite-web",
+    description: {
+      description:
+        "Aplicación para Windows diseñada para redactar tus ideas y pensamientos.",
+      itemOne: "Alojamiento de archivos en local.",
+      itemTwo: "Editor de código incorporado.",
+      itemThree: "Opcion para personalizar: fuente, tamaño y color de letra.",
+    },
+  },
+  {
+    id: 2,
     name: "pomoLym",
     image: pomolym,
     visitPage: "https://pomolym.netlify.app/",
@@ -25,20 +52,7 @@ const PROJECTS_ITEMS = [
     },
   },
   {
-    id: 1,
-    name: "algorithmic market",
-    image: algorithmic,
-    visitPage: "https://algorithmic-market.com/",
-    description: {
-      description:
-        "Aplicación web desarrollada en equipo, en la cual se venden cursos de trading para ser consumidos dentro de la misma.",
-      itemOne: "Alojamiento de videos en bunny.",
-      itemTwo: "Login para usuarios utilizando Auth0.",
-      itemThree: "Compras integradas con Stripe.",
-    },
-  },
-  {
-    id: 2,
+    id: 3,
     name: "clipboard notes",
     image: clipboard,
     visitPage: "https://clipboard-notes.netlify.app/",
@@ -51,21 +65,6 @@ const PROJECTS_ITEMS = [
       itemThree: "Versión disponible en inglés y español.",
     },
   },
-  {
-    id: 3,
-    name: "taxiBarber",
-    image: taxiBarber,
-    visitPage: "https://taxi-barber.netlify.app/",
-    visitGitHub: "https://github.com/gioliotta/TaxiBarber",
-    description: {
-      description:
-        "Implementé la actualización de inputs utilizando estados y guardé la información en  el local storage.",
-      itemOne: "Gestión el precio de un corte de pelo.",
-      itemTwo: "Panel de configuración para modificar los parámetros.",
-      itemThree: "Opción para cambiar contraseña.",
-    },
-  },
-
   {
     id: 4,
     name: "smartArt generator",
@@ -94,21 +93,6 @@ const PROJECTS_ITEMS = [
       itemThree: "Copiar la contraseña generada y usarla en cualquier lugar.",
     },
   },
-
-  // {
-  //   id: 6,
-  //   name: "Generador de cards",
-  //   image: cardsGenerator,
-  //   visitPage: "https://card-generator-ts.netlify.app/",
-  //   visitGitHub: "https://github.com/gioliotta/card-generator",
-  //   description: {
-  //     description:
-  //       "Integré React y TypeScript, trabajé con tipado estático, lo que brindó beneficios en términos de detección de errores.",
-  //     itemOne: "Los datos ingresados se modifican en tiempo real.",
-  //     itemTwo: "Botón para descargar la card generada.",
-  //     itemThree: "Uso de styled-components para los estilos.",
-  //   },
-  // },
 ];
 
 const CONTACT_ITEMS = [
