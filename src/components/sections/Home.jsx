@@ -52,7 +52,7 @@ function Home() {
           </h1>
           <br />
           <p style={{ textAlign: "end", width: "100%", marginRight: "-2em" }}>
-            Giovanni Liotta
+            Gioliotta
           </p>
         </div>
 
