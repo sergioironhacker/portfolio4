@@ -90,7 +90,9 @@ function Home() {
             fill="#4acb4a"
           />
         </svg>
-        <p className="footer__active">&nbsp;Activo</p>
+        <p className="footer__active">
+          &nbsp;{Math.round(Math.random() * 10) < 5 ? "Activo" : "Programando"}
+        </p>
       </footer>
     </main>
   );
