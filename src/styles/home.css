@@ -105,7 +105,9 @@
   justify-content: space-evenly;
   width: 100%;
   height: 45vh;
+  min-height: 400px;
   margin-top: 6em;
+  zoom: 0.9;
 }
 .home__title {
   text-shadow: 0 0em 2em #1df2dc;
